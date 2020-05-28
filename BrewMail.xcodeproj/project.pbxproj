@@ -13,9 +13,13 @@
 		74583116248065230003D030 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74583114248065230003D030 /* Main.storyboard */; };
 		74583118248065240003D030 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74583117248065240003D030 /* Assets.xcassets */; };
 		7458311B248065240003D030 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74583119248065240003D030 /* LaunchScreen.storyboard */; };
+		74E1455524806E4800D733B7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 74E1455424806E4800D733B7 /* GoogleService-Info.plist */; };
+		9B9BA367B5907EC8A16BB5D9 /* Pods_BrewMail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7575D960F3451D7DE1B3B9F6 /* Pods_BrewMail.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		204A48C4A7B6635B5143DFE8 /* Pods-BrewMail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewMail.release.xcconfig"; path = "Target Support Files/Pods-BrewMail/Pods-BrewMail.release.xcconfig"; sourceTree = "<group>"; };
+		70859F984E290D831DED602C /* Pods-BrewMail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewMail.debug.xcconfig"; path = "Target Support Files/Pods-BrewMail/Pods-BrewMail.debug.xcconfig"; sourceTree = "<group>"; };
 		7458310B248065230003D030 /* BrewMail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrewMail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7458310E248065230003D030 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74583110248065230003D030 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		74583117248065240003D030 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7458311A248065240003D030 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7458311C248065240003D030 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74E1455424806E4800D733B7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7575D960F3451D7DE1B3B9F6 /* Pods_BrewMail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrewMail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B9BA367B5907EC8A16BB5D9 /* Pods_BrewMail.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2767929300B0556C7FD5C489 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7575D960F3451D7DE1B3B9F6 /* Pods_BrewMail.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5FD97A618A00C3766E2FF47B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70859F984E290D831DED602C /* Pods-BrewMail.debug.xcconfig */,
+				204A48C4A7B6635B5143DFE8 /* Pods-BrewMail.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		74583102248065230003D030 = {
 			isa = PBXGroup;
 			children = (
 				7458310D248065230003D030 /* BrewMail */,
 				7458310C248065230003D030 /* Products */,
+				5FD97A618A00C3766E2FF47B /* Pods */,
+				2767929300B0556C7FD5C489 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +90,7 @@
 				74583117248065240003D030 /* Assets.xcassets */,
 				74583119248065240003D030 /* LaunchScreen.storyboard */,
 				7458311C248065240003D030 /* Info.plist */,
+				74E1455424806E4800D733B7 /* GoogleService-Info.plist */,
 			);
 			path = BrewMail;
 			sourceTree = "<group>";
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7458311F248065240003D030 /* Build configuration list for PBXNativeTarget "BrewMail" */;
 			buildPhases = (
+				8B5B1E6C22BED9E59919B9A0 /* [CP] Check Pods Manifest.lock */,
 				74583107248065230003D030 /* Sources */,
 				74583108248065230003D030 /* Frameworks */,
 				74583109248065230003D030 /* Resources */,
+				3B1A580BD036635D3F631B73 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +156,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				7458311B248065240003D030 /* LaunchScreen.storyboard in Resources */,
+				74E1455524806E4800D733B7 /* GoogleService-Info.plist in Resources */,
 				74583118248065240003D030 /* Assets.xcassets in Resources */,
 				74583116248065230003D030 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B1A580BD036635D3F631B73 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrewMail/Pods-BrewMail-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrewMail/Pods-BrewMail-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BrewMail/Pods-BrewMail-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B5B1E6C22BED9E59919B9A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BrewMail-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		74583107248065230003D030 /* Sources */ = {
@@ -282,6 +355,7 @@
 		};
 		74583120248065240003D030 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70859F984E290D831DED602C /* Pods-BrewMail.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +374,7 @@
 		};
 		74583121248065240003D030 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 204A48C4A7B6635B5143DFE8 /* Pods-BrewMail.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
