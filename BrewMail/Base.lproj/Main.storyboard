@@ -19,6 +19,9 @@
                                 <rect key="frame" x="159" y="588" width="57" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Register"/>
+                                <connections>
+                                    <segue destination="ALM-BA-v38" kind="show" id="vrR-je-qJI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRK-be-R9I">
                                 <rect key="frame" x="168" y="682" width="38" height="30"/>
@@ -38,7 +41,7 @@
         <!--Register View Controller-->
         <scene sceneID="717-5E-a0n">
             <objects>
-                <viewController id="ALM-BA-v38" customClass="RegisterViewController" sceneMemberID="viewController">
+                <viewController id="ALM-BA-v38" customClass="RegisterViewController" customModule="BrewMail" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XT4-SO-QbK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,6 +74,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Ncs-1R-gvM"/>
                     </view>
+                    <navigationItem key="navigationItem" id="cEX-Wb-Voy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GVo-yU-FAQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
