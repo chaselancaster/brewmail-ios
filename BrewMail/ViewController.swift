@@ -10,8 +10,6 @@ import UIKit
 import Firebase
 
 class ViewController: UIViewController {
-    @IBOutlet var registerButton: UIButton!
-    @IBOutlet var loginButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,10 +17,6 @@ class ViewController: UIViewController {
         self.title = "BrewMail"
     }
 
-    @IBAction func registerPressed(_ sender: Any) {
-    }
-    @IBAction func loginPressed(_ sender: Any) {
-    }
     
 }
 

@@ -20,31 +20,23 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Register"/>
                                 <connections>
-                                    <action selector="registerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kpq-D6-Vnv"/>
-                                    <segue destination="ALM-BA-v38" kind="show" identifier="ToRegister" id="vrR-je-qJI"/>
+                                    <segue destination="ALM-BA-v38" kind="show" id="cei-4I-qCN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRK-be-R9I">
                                 <rect key="frame" x="168" y="682" width="38" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login"/>
-                                <connections>
-                                    <action selector="loginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xpE-WA-zXT"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="ZWV-pM-6xT"/>
-                    <connections>
-                        <outlet property="loginButton" destination="gRK-be-R9I" id="aWh-WQ-hAN"/>
-                        <outlet property="registerButton" destination="bLq-Ye-1LU" id="2ob-q8-5Ew"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1042.0289855072465" y="137.94642857142856"/>
+            <point key="canvasLocation" x="1040.8" y="137.4384236453202"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="717-5E-a0n">
@@ -77,20 +69,12 @@
                                 <rect key="frame" x="159" y="574" width="57" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Register"/>
-                                <connections>
-                                    <action selector="registerPressed:" destination="ALM-BA-v38" eventType="touchUpInside" id="iau-ys-WN1"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Ncs-1R-gvM"/>
                     </view>
                     <navigationItem key="navigationItem" id="cEX-Wb-Voy"/>
-                    <connections>
-                        <outlet property="emailTextfield" destination="bAS-Wl-hOL" id="YF1-Ea-kFk"/>
-                        <outlet property="passwordTextfield" destination="66W-H4-rvJ" id="x0D-6P-msK"/>
-                        <outlet property="registerPressed" destination="h5f-Cr-8XY" id="sVX-wm-MS7"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GVo-yU-FAQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
