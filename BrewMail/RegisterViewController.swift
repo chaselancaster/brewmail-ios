@@ -11,6 +11,10 @@ import Firebase
 
 class RegisterViewController: UIViewController {
     
+    @IBOutlet var emailTextfield: UITextField!
+    @IBOutlet var passwordTextfield: UITextField!
     
-    
+    @IBAction func registerPressed(_ sender: Any) {
+        
+    }
 }
