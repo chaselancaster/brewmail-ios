@@ -22,6 +22,7 @@ class RegisterViewController: UIViewController {
                     print(e, "<-- Error in Register Auth")
                 } else {
                     // Navigate to the main search field
+                    print("User successfully registered")
                 }
             }
         }
