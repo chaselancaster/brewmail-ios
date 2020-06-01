@@ -152,6 +152,7 @@
                     <connections>
                         <outlet property="emailTextfield" destination="dYR-PV-Oyv" id="0Fh-Pj-1A1"/>
                         <outlet property="passwordTextfield" destination="OgQ-eZ-9Yt" id="m0x-EI-3Ea"/>
+                        <segue destination="gr1-jp-pvW" kind="show" identifier="LoginToSearch" id="YQc-LQ-VuB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gLc-t9-fm3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -193,4 +194,7 @@
             <point key="canvasLocation" x="2686" y="137"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="YQc-LQ-VuB"/>
+    </inferredMetricsTieBreakers>
 </document>

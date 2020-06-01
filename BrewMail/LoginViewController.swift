@@ -22,6 +22,7 @@ class LoginViewController: UIViewController {
                     print(e, "<-- Error in Login")
                 } else {
                     print("Login successful")
+                    self?.performSegue(withIdentifier: Constants.loginSegue, sender: self)
                 }
             }
         }
