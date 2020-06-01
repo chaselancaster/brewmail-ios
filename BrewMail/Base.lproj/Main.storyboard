@@ -133,6 +133,9 @@
                                 <rect key="frame" x="169" y="574" width="38" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginPressed:" destination="j3N-YH-5ZJ" eventType="touchUpInside" id="R8H-uf-eCQ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HmY-DX-x1b">
                                 <rect key="frame" x="126" y="150" width="122" height="21"/>
@@ -146,6 +149,10 @@
                         <viewLayoutGuide key="safeArea" id="K5Q-K4-GCV"/>
                     </view>
                     <navigationItem key="navigationItem" id="461-nB-WCk"/>
+                    <connections>
+                        <outlet property="emailTextfield" destination="dYR-PV-Oyv" id="0Fh-Pj-1A1"/>
+                        <outlet property="passwordTextfield" destination="OgQ-eZ-9Yt" id="m0x-EI-3Ea"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gLc-t9-fm3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
