@@ -84,6 +84,7 @@
                     <connections>
                         <outlet property="emailTextfield" destination="bAS-Wl-hOL" id="iC0-BV-fLK"/>
                         <outlet property="passwordTextfield" destination="66W-H4-rvJ" id="PXE-a4-dKo"/>
+                        <segue destination="gr1-jp-pvW" kind="show" identifier="RegisterToSearch" id="bUq-8h-PjZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GVo-yU-FAQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -150,10 +151,10 @@
             </objects>
             <point key="canvasLocation" x="1857" y="359"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Search View Controller-->
         <scene sceneID="J6B-3q-X5r">
             <objects>
-                <tableViewController id="gr1-jp-pvW" sceneMemberID="viewController">
+                <tableViewController id="gr1-jp-pvW" customClass="SearchViewController" customModule="BrewMail" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="E71-8b-Lgk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -178,6 +179,7 @@
                             <outlet property="delegate" destination="gr1-jp-pvW" id="gyP-ne-Pnn"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="90P-cK-raq"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c9n-dv-FJM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
