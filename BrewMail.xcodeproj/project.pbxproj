@@ -16,6 +16,7 @@
 		749F105B248091A10028ED59 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749F105A248091A10028ED59 /* RegisterViewController.swift */; };
 		74E1455524806E4800D733B7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 74E1455424806E4800D733B7 /* GoogleService-Info.plist */; };
 		74F9B7322485A04C000A7239 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F9B7312485A04C000A7239 /* LoginViewController.swift */; };
+		74F9B7342485A388000A7239 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F9B7332485A388000A7239 /* Constants.swift */; };
 		9B9BA367B5907EC8A16BB5D9 /* Pods_BrewMail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7575D960F3451D7DE1B3B9F6 /* Pods_BrewMail.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		749F105A248091A10028ED59 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		74E1455424806E4800D733B7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		74F9B7312485A04C000A7239 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		74F9B7332485A388000A7239 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7575D960F3451D7DE1B3B9F6 /* Pods_BrewMail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrewMail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -92,6 +94,7 @@
 				74583114248065230003D030 /* Main.storyboard */,
 				74F9B7312485A04C000A7239 /* LoginViewController.swift */,
 				749F105A248091A10028ED59 /* RegisterViewController.swift */,
+				74F9B7332485A388000A7239 /* Constants.swift */,
 				74583117248065240003D030 /* Assets.xcassets */,
 				74583119248065240003D030 /* LaunchScreen.storyboard */,
 				7458311C248065240003D030 /* Info.plist */,
@@ -221,6 +224,7 @@
 				74583111248065230003D030 /* SceneDelegate.swift in Sources */,
 				74F9B7322485A04C000A7239 /* LoginViewController.swift in Sources */,
 				749F105B248091A10028ED59 /* RegisterViewController.swift in Sources */,
+				74F9B7342485A388000A7239 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
