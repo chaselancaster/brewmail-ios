@@ -92,11 +92,9 @@
 			children = (
 				7458310E248065230003D030 /* AppDelegate.swift */,
 				74583110248065230003D030 /* SceneDelegate.swift */,
-				74583112248065230003D030 /* ViewController.swift */,
-				74583114248065230003D030 /* Main.storyboard */,
-				74F9B7352485A9BF000A7239 /* SearchViewController.swift */,
-				74F9B7312485A04C000A7239 /* LoginViewController.swift */,
-				749F105A248091A10028ED59 /* RegisterViewController.swift */,
+				74F9B73A2485BF99000A7239 /* Model */,
+				74F9B7382485BF6E000A7239 /* Controller */,
+				74F9B7392485BF7D000A7239 /* View */,
 				74F9B7332485A388000A7239 /* Constants.swift */,
 				74583117248065240003D030 /* Assets.xcassets */,
 				74583119248065240003D030 /* LaunchScreen.storyboard */,
@@ -104,6 +102,33 @@
 				74E1455424806E4800D733B7 /* GoogleService-Info.plist */,
 			);
 			path = BrewMail;
+			sourceTree = "<group>";
+		};
+		74F9B7382485BF6E000A7239 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				74583112248065230003D030 /* ViewController.swift */,
+				74F9B7352485A9BF000A7239 /* SearchViewController.swift */,
+				74F9B7312485A04C000A7239 /* LoginViewController.swift */,
+				749F105A248091A10028ED59 /* RegisterViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		74F9B7392485BF7D000A7239 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				74583114248065230003D030 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		74F9B73A2485BF99000A7239 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
