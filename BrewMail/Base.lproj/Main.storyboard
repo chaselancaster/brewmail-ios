@@ -27,6 +27,9 @@
                                 <rect key="frame" x="168" y="682" width="38" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <segue destination="j3N-YH-5ZJ" kind="show" id="RXF-4C-ka4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -75,6 +78,10 @@
                         <viewLayoutGuide key="safeArea" id="Ncs-1R-gvM"/>
                     </view>
                     <navigationItem key="navigationItem" id="cEX-Wb-Voy"/>
+                    <connections>
+                        <outlet property="emailTextfield" destination="bAS-Wl-hOL" id="iC0-BV-fLK"/>
+                        <outlet property="passwordTextfield" destination="66W-H4-rvJ" id="PXE-a4-dKo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GVo-yU-FAQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
