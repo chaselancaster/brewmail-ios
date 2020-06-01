@@ -8,4 +8,5 @@
 
 struct Constants {
     static let registerSegue = "RegisterToSearch"
+    static let loginSegue = "LoginToSearch"
 }

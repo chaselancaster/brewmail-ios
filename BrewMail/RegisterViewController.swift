@@ -23,6 +23,7 @@ class RegisterViewController: UIViewController {
                 } else {
                     // Navigate to the main search field
                     print("User successfully registered")
+                    self.performSegue(withIdentifier: Constants.registerSegue, sender: self)
                 }
             }
         }
