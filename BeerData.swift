@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Response: Codable {
+struct BeerResponse: Codable {
     
     let count: Int
     let items: [Item]
