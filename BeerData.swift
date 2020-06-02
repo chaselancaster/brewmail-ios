@@ -10,6 +10,12 @@ import Foundation
 
 struct BeerResponse: Codable {
     
+    let beers:
+    
+}
+
+struct Beers: Codable {
+    
     let count: Int?
     let items: [Item]
     
