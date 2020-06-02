@@ -10,6 +10,13 @@ import UIKit
 
 class SearchViewController: UITableViewController {
     
+    var beerManager = BeerManager()
     
+    override func viewDidLoad() {
+        
+        // Setting the VC as BeerManager's delegate
+        beerManager.delegate = self
+        
+    }
     
 }
