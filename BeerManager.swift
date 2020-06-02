@@ -20,8 +20,8 @@ struct BeerManager {
     func searchBeer(with name: String) {
         
         let urlString = "\(baseURL)search/beer?q=\(name)&client_id=\(clientID)&client_secret=\(clientSecret)"
-        print(urlString)
-        
+//        print(urlString)
+        performRequest(with: urlString)
     }
     
     func performRequest(with urlString: String) {
@@ -37,6 +37,13 @@ struct BeerManager {
                     // Parse JSON
                     let decoder = JSONDecoder()
                     
+                    do {
+                        let beerResponse = try decoder.decode(BeerResponse.self, from: data!)
+                        print(beerResponse, "<-- beerResponse")
+                    }
+                    catch {
+                        print("Error in JSON parsing")
+                    }
                 }
                 
             }
