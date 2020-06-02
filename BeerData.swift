@@ -10,7 +10,7 @@ import Foundation
 
 struct BeerResponse: Codable {
     
-    let count: Int
+    let count: Int?
     let items: [Item]
     
 }
@@ -18,8 +18,7 @@ struct BeerResponse: Codable {
 struct Item: Codable {
     
     let beer: [Beer]
-    
-    
+
 }
 
 struct Beer: Codable {

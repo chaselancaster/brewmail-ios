@@ -20,29 +20,32 @@ struct BeerManager {
     func searchBeer(with name: String) {
         
         let urlString = "\(baseURL)search/beer?q=\(name)&client_id=\(clientID)&client_secret=\(clientSecret)"
-//        print(urlString)
+        print(urlString, "<-- urlString")
         performRequest(with: urlString)
     }
     
     func performRequest(with urlString: String) {
         
         // Creating the URL
+        print("creating URL")
         if let url = URL(string: urlString) {
             // Creating a URLSession
+            print("creating session")
             let session = URLSession(configuration: .default)
             // Give session a task
+            print("creating dataTask")
             let dataTask = session.dataTask(with: url) { (data, response, error) in
                 // Check for errors
                 if error == nil && data != nil {
                     // Parse JSON
                     let decoder = JSONDecoder()
-                    
+                    print(data, "<-- data")
                     do {
                         let beerResponse = try decoder.decode(BeerResponse.self, from: data!)
                         print(beerResponse, "<-- beerResponse")
                     }
                     catch {
-                        print("Error in JSON parsing")
+                        print(error, "<--Error in JSON parsing")
                     }
                 }
                 
