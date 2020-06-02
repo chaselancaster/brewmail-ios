@@ -8,31 +8,36 @@
 
 import Foundation
 
-struct BeerResponse: Codable {
+struct Root: Codable {
     
-    let beers:
-    
-}
-
-struct Beers: Codable {
-    
-    let count: Int?
-    let items: [Item]
+    let response: BeersResponse
     
 }
 
-struct Item: Codable {
+struct BeersResponse: Codable {
     
-    let beer: [Beer]
+    let beers: BeersPacket
+    
+}
 
+struct BeersPacket: Codable {
+    
+    let items: [BeerItems]
+    
+}
+
+struct BeerItems: Codable {
+    
+    let beer: Beer
+    
 }
 
 struct Beer: Codable {
     
     let beer_name: String
     let beer_label: String
-    let beer_abv: String
-    let beer_ibu: String
+    let beer_abv: Double
+    let beer_ibu: Int
     let beer_description: String
     
 }

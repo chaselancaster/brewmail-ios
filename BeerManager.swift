@@ -41,7 +41,7 @@ struct BeerManager {
                     let decoder = JSONDecoder()
                     print(data, "<-- data")
                     do {
-                        let beerResponse = try decoder.decode(BeerResponse.self, from: data!)
+                        let beerResponse = try decoder.decode(Root.self, from: data!)
                         print(beerResponse, "<-- beerResponse")
                     }
                     catch {
