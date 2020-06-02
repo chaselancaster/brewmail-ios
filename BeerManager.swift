@@ -24,4 +24,25 @@ struct BeerManager {
         
     }
     
+    func performRequest(with urlString: String) {
+        
+        // Creating the URL
+        if let url = URL(string: urlString) {
+            // Creating a URLSession
+            let session = URLSession(configuration: .default)
+            // Give session a task
+            let dataTask = session.dataTask(with: url) { (data, response, error) in
+                // Check for errors
+                if error == nil && data != nil {
+                    // Parse JSON
+                    let decoder = JSONDecoder()
+                    
+                }
+                
+            }
+            dataTask.resume()
+        }
+        
+    }
+    
 }
