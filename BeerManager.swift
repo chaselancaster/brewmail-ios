@@ -15,4 +15,6 @@ struct BeerManager {
     let clientID = "890DD1105A2483401A50DEE63A4369641B1E9F2C"
     let clientSecret = "ED374F4D5737AB079E99198D36F42B656E874F1F"
     
+    var delegate: SearchViewController?
+    
 }
