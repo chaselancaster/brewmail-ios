@@ -18,6 +18,7 @@
 		74F9B7322485A04C000A7239 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F9B7312485A04C000A7239 /* LoginViewController.swift */; };
 		74F9B7342485A388000A7239 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F9B7332485A388000A7239 /* Constants.swift */; };
 		74F9B7362485A9BF000A7239 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F9B7352485A9BF000A7239 /* SearchViewController.swift */; };
+		74F9B73C2485D7AE000A7239 /* BeerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F9B73B2485D7AE000A7239 /* BeerData.swift */; };
 		9B9BA367B5907EC8A16BB5D9 /* Pods_BrewMail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7575D960F3451D7DE1B3B9F6 /* Pods_BrewMail.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		74F9B7312485A04C000A7239 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		74F9B7332485A388000A7239 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		74F9B7352485A9BF000A7239 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		74F9B73B2485D7AE000A7239 /* BeerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerData.swift; sourceTree = "<group>"; };
 		7575D960F3451D7DE1B3B9F6 /* Pods_BrewMail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrewMail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -126,6 +128,7 @@
 		74F9B73A2485BF99000A7239 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				74F9B73B2485D7AE000A7239 /* BeerData.swift */,
 			);
 			name = Model;
 			path = ..;
@@ -248,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74583113248065230003D030 /* ViewController.swift in Sources */,
+				74F9B73C2485D7AE000A7239 /* BeerData.swift in Sources */,
 				74F9B7362485A9BF000A7239 /* SearchViewController.swift in Sources */,
 				7458310F248065230003D030 /* AppDelegate.swift in Sources */,
 				74583111248065230003D030 /* SceneDelegate.swift in Sources */,
