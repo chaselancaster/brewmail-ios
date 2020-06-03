@@ -38,6 +38,9 @@ struct BeerManager {
                 // Check for errors
                 if error == nil && data != nil {
                     // parseJSON function
+                    if let safeData = data {
+                        self.parseJSON(safeData)
+                    }
                 }
                 
             }
@@ -46,19 +49,20 @@ struct BeerManager {
         
     }
     
-//    func parseJSON(_ beerData: Data) {
-//        
-//        // Parse JSON
-//        let decoder = JSONDecoder()
-//        print(data, "<-- data")
-//        do {
-//            let beerResponse = try decoder.decode(Root.self, from: data!)
-//            print(beerResponse, "<-- beerResponse")
-//        }
-//        catch {
-//            print(error, "<--Error in JSON parsing")
-//        }
-//        
-//    }
+    func parseJSON(_ beerData: Data) {
+
+        // Parse JSON
+        print("parseJSON function hit")
+        let decoder = JSONDecoder()
+        print(beerData, "<-- beerData")
+        do {
+            let beerResponse = try decoder.decode(Root.self, from: beerData)
+            print(beerResponse, "<-- beerResponse")
+        }
+        catch {
+            print(error, "<--Error in JSON parsing")
+        }
+
+    }
     
 }
