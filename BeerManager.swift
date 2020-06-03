@@ -37,16 +37,7 @@ struct BeerManager {
             let dataTask = session.dataTask(with: url) { (data, response, error) in
                 // Check for errors
                 if error == nil && data != nil {
-                    // Parse JSON
-                    let decoder = JSONDecoder()
-                    print(data, "<-- data")
-                    do {
-                        let beerResponse = try decoder.decode(Root.self, from: data!)
-                        print(beerResponse, "<-- beerResponse")
-                    }
-                    catch {
-                        print(error, "<--Error in JSON parsing")
-                    }
+                    // parseJSON function
                 }
                 
             }
@@ -54,5 +45,20 @@ struct BeerManager {
         }
         
     }
+    
+//    func parseJSON(_ beerData: Data) {
+//        
+//        // Parse JSON
+//        let decoder = JSONDecoder()
+//        print(data, "<-- data")
+//        do {
+//            let beerResponse = try decoder.decode(Root.self, from: data!)
+//            print(beerResponse, "<-- beerResponse")
+//        }
+//        catch {
+//            print(error, "<--Error in JSON parsing")
+//        }
+//        
+//    }
     
 }
