@@ -57,7 +57,9 @@ struct BeerManager {
         print(beerData, "<-- beerData")
         do {
             let beerResponse = try decoder.decode(Root.self, from: beerData)
-            print(beerResponse, "<-- beerResponse")
+//            print(beerResponse, "<-- beerResponse")
+            let beerItems = beerResponse.response.beers.items
+            print(beerItems, "<-- beerName")
         }
         catch {
             print(error, "<--Error in JSON parsing")
