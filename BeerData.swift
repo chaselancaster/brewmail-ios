@@ -22,11 +22,11 @@ struct BeersResponse: Codable {
 
 struct BeersPacket: Codable {
     
-    let items: [BeerItems]
+    let items: [Beers]
     
 }
 
-struct BeerItems: Codable {
+struct Beers: Codable {
     
     let beer: Beer
     
