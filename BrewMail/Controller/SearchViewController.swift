@@ -20,6 +20,7 @@ class SearchViewController: UITableViewController {
         
         // Setting the VC as BeerManager's delegate
         beerManager.delegate = self
+        searchBar.delegate = self
         
     }
     
@@ -30,7 +31,8 @@ class SearchViewController: UITableViewController {
 extension SearchViewController: UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        beerManager.searchBeer(with: searchBar.text ?? "")
+        print("searchBarSearchButtonClicked")
+//        beerManager.searchBeer(with: searchBar.text ?? "")
     }
     
 }
