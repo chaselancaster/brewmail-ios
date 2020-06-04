@@ -8,6 +8,12 @@
 
 import Foundation
 
+protocol BeerManagerDelegate {
+    
+    func didSearchBeer(_ beerManager: BeerManager, beers: [Beer])
+    
+}
+
 struct BeerManager {
     
     let baseURL = "https://api.untappd.com/v4/"
