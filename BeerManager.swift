@@ -11,6 +11,7 @@ import Foundation
 protocol BeerManagerDelegate {
     
     func didSearchBeer(_ beerManager: BeerManager, beers: [Beer])
+    func didFailWithError(error: Error)
     
 }
 
