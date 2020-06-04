@@ -36,5 +36,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
     }
     
+    // MARK: - Keyboard Related Code
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
 }
 
