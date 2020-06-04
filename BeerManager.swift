@@ -46,7 +46,6 @@ struct BeerManager {
                 if let safeData = data {
                     if let beerData = self.parseJSON(safeData) {
                         self.delegate?.didSearchBeer(self, beers: beerData)
-                        print(beerData, "<-- beerData in closure")
                     }
                 }
                 

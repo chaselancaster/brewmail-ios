@@ -29,6 +29,8 @@ extension SearchViewController: BeerManagerDelegate {
     
     func didSearchBeer(_ beerManager: BeerManager, beers: [Beer]) {
         print("didSearchBeer function hit in SearchVC")
+        beersFromSearch.append(contentsOf: beers)
+        print(beersFromSearch, "<-- beersFromSearch Array")
     }
     
     func didFailWithError(error: Error) {
