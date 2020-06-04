@@ -38,8 +38,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: - Keyboard Related Code
     
+    // Hiding keyboard when tapped outside
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
+    }
+    
+    // Hides keyboard when return button is tapped
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
 }
