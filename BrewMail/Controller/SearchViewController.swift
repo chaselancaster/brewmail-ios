@@ -37,8 +37,6 @@ extension SearchViewController: UISearchBarDelegate {
         searchBar.resignFirstResponder()
     }
     
-    
-    
 }
 
 // MARK: - BeerManagerDelegate code
