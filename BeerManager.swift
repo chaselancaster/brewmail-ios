@@ -32,13 +32,10 @@ struct BeerManager {
     func performRequest(with urlString: String) {
         
         // Creating the URL
-        print("creating URL")
         if let url = URL(string: urlString) {
             // Creating a URLSession
-            print("creating session")
             let session = URLSession(configuration: .default)
             // Give session a task
-            print("creating dataTask")
             let task = session.dataTask(with: url) { (data, response, error) in
                 if error != nil {
                     print(error!, "<-- Error after dataTask")
@@ -62,9 +59,7 @@ struct BeerManager {
     func parseJSON(_ beerData: Data) -> [Beer]? {
         
         // Parse JSON
-        print("parseJSON function hit")
         let decoder = JSONDecoder()
-//        print(beerData, "<-- beerData")
         do {
             var beerArray = [Beer]()
             let beerResponse = try decoder.decode(Root.self, from: beerData)

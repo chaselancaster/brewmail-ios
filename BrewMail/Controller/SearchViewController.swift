@@ -28,11 +28,11 @@ class SearchViewController: UITableViewController {
 extension SearchViewController: BeerManagerDelegate {
     
     func didSearchBeer(_ beerManager: BeerManager, beers: [Beer]) {
-        <#code#>
+        print("didSearchBeer function hit in SearchVC")
     }
     
     func didFailWithError(error: Error) {
-        <#code#>
+        print(error, "<-- didFailWithError function hit in SearchVC")
     }
     
 }
