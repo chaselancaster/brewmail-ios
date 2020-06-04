@@ -9,10 +9,8 @@
 import Foundation
 
 protocol BeerManagerDelegate {
-    
     func didSearchBeer(_ beerManager: BeerManager, beers: [Beer])
     func didFailWithError(error: Error)
-    
 }
 
 struct BeerManager {
@@ -57,7 +55,7 @@ struct BeerManager {
     }
     
     func parseJSON(_ beerData: Data) -> [Beer]? {
-
+        
         // Parse JSON
         print("parseJSON function hit")
         let decoder = JSONDecoder()
@@ -65,9 +63,9 @@ struct BeerManager {
         do {
             var beerArray = [Beer]()
             let beerResponse = try decoder.decode(Root.self, from: beerData)
-//            print(beerResponse, "<-- beerResponse")
+            //            print(beerResponse, "<-- beerResponse")
             let beerSearchResults = beerResponse.response.beers.items
-//            let beerItems = beerResponse.response.beers.items
+            //            let beerItems = beerResponse.response.beers.items
             for item in beerSearchResults {
                 let beer = item.beer
                 let finalBeer = Beer(bid: beer.bid, beer_name: beer.beer_name, beer_label: beer.beer_label, beer_abv: beer.beer_abv, beer_ibu: beer.beer_ibu, beer_description: beer.beer_description)
@@ -80,7 +78,7 @@ struct BeerManager {
             print(error, "<--Error in JSON parsing")
             return nil
         }
-
+        
     }
     
 }
