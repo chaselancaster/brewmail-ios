@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var emailTextfield: UITextField!
     @IBOutlet var passwordTextfield: UITextField!
@@ -31,8 +31,3 @@ class LoginViewController: UIViewController {
     
 }
 
-extension LoginViewController: UITextFieldDelegate {
-    
-    
-    
-}
