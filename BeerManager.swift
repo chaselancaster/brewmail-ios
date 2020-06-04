@@ -46,6 +46,13 @@ struct BeerManager {
                     return
                 }
                 
+                if let safeData = data {
+                    if let beerData = self.parseJSON(safeData) {
+                        self.delegate?.didSearchBeer(self, beers: beerData)
+                        print(beerData, "<-- beerData in closure")
+                    }
+                }
+                
             }
             task.resume()
         }
@@ -57,7 +64,7 @@ struct BeerManager {
         // Parse JSON
         print("parseJSON function hit")
         let decoder = JSONDecoder()
-        print(beerData, "<-- beerData")
+//        print(beerData, "<-- beerData")
         do {
             var beerArray = [Beer]()
             let beerResponse = try decoder.decode(Root.self, from: beerData)
@@ -69,7 +76,7 @@ struct BeerManager {
                 let finalBeer = Beer(bid: beer.bid, beer_name: beer.beer_name, beer_label: beer.beer_label, beer_abv: beer.beer_abv, beer_ibu: beer.beer_ibu, beer_description: beer.beer_description)
                 beerArray.append(finalBeer)
             }
-            print(beerArray, "<--beerArray")
+//            print(beerArray, "<--beerArray")
             return beerArray
         }
         catch {
