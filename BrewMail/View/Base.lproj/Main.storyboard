@@ -188,6 +188,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="90P-cK-raq"/>
+                    <connections>
+                        <outlet property="searchBar" destination="543-HP-Fci" id="EJU-GI-XN1"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c9n-dv-FJM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

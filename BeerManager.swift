@@ -25,7 +25,6 @@ struct BeerManager {
     func searchBeer(with name: String) {
         
         let urlString = "\(baseURL)search/beer?q=\(name)&client_id=\(clientID)&client_secret=\(clientSecret)"
-        print(urlString, "<-- urlString")
         performRequest(with: urlString)
     }
     

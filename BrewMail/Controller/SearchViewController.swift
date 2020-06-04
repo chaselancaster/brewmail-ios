@@ -10,6 +10,8 @@ import UIKit
 
 class SearchViewController: UITableViewController {
     
+    @IBOutlet var searchBar: UISearchBar!
+    
     var beerManager = BeerManager()
     
     var beersFromSearch = [Beer]()
@@ -19,7 +21,7 @@ class SearchViewController: UITableViewController {
         // Setting the VC as BeerManager's delegate
         beerManager.delegate = self
         
-        beerManager.searchBeer(with: "Oberon")
+//        beerManager.searchBeer(with: "Oberon")
         
     }
     
