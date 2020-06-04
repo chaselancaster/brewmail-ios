@@ -49,7 +49,7 @@ struct BeerManager {
         
     }
     
-    func parseJSON(_ beerData: Data) -> [Beer] {
+    func parseJSON(_ beerData: Data) -> [Beer]? {
 
         // Parse JSON
         print("parseJSON function hit")
@@ -70,6 +70,7 @@ struct BeerManager {
         }
         catch {
             print(error, "<--Error in JSON parsing")
+            return nil
         }
 
     }
