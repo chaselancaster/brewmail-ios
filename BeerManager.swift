@@ -40,12 +40,10 @@ struct BeerManager {
             // Give session a task
             print("creating dataTask")
             let task = session.dataTask(with: url) { (data, response, error) in
-                // Check for errors
-                if error == nil && data != nil {
-                    // parseJSON function
-                    if let safeData = data {
-                        self.parseJSON(safeData)
-                    }
+                if error != nil {
+                    print(error!, "<-- Error after dataTask")
+                    self.delegate?.didFailWithError(error: error!)
+                    return
                 }
                 
             }
