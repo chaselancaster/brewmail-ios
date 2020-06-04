@@ -49,22 +49,24 @@ struct BeerManager {
         
     }
     
-    func parseJSON(_ beerData: Data) {
+    func parseJSON(_ beerData: Data) -> [Beer] {
 
         // Parse JSON
         print("parseJSON function hit")
         let decoder = JSONDecoder()
         print(beerData, "<-- beerData")
         do {
+            var beerArray = [Beer]()
             let beerResponse = try decoder.decode(Root.self, from: beerData)
-            print(beerResponse, "<-- beerResponse")
+//            print(beerResponse, "<-- beerResponse")
             let beerSearchResults = beerResponse.response.beers.items
 //            let beerItems = beerResponse.response.beers.items
             for item in beerSearchResults {
-                var count = 0
-//                print(item.beer, "<- Beer #\(count)")
-                count+=1
+                let beer = item.beer
+                let finalBeer = Beer(bid: beer.bid, beer_name: beer.beer_name, beer_label: beer.beer_label, beer_abv: beer.beer_abv, beer_ibu: beer.beer_ibu, beer_description: beer.beer_description)
+                beerArray.append(finalBeer)
             }
+            return beerArray
         }
         catch {
             print(error, "<--Error in JSON parsing")
