@@ -12,6 +12,8 @@ class SearchViewController: UITableViewController {
     
     var beerManager = BeerManager()
     
+    var beersFromSearch = [Beer]()
+    
     override func viewDidLoad() {
         
         // Setting the VC as BeerManager's delegate
@@ -19,6 +21,18 @@ class SearchViewController: UITableViewController {
         
         beerManager.searchBeer(with: "Oberon")
         
+    }
+    
+}
+
+extension SearchViewController: BeerManagerDelegate {
+    
+    func didSearchBeer(_ beerManager: BeerManager, beers: [Beer]) {
+        <#code#>
+    }
+    
+    func didFailWithError(error: Error) {
+        <#code#>
     }
     
 }
