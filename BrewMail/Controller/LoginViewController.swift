@@ -14,6 +14,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var emailTextfield: UITextField!
     @IBOutlet var passwordTextfield: UITextField!
     
+    override func viewDidLoad() {
+        
+        emailTextfield.delegate = self
+        passwordTextfield.delegate = self
+        
+    }
+    
     @IBAction func loginPressed(_ sender: Any) {
         
         if let email = emailTextfield.text, let password = passwordTextfield.text {
