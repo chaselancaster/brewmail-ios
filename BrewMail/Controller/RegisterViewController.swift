@@ -14,6 +14,13 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var emailTextfield: UITextField!
     @IBOutlet var passwordTextfield: UITextField!
     
+    override func viewDidLoad() {
+        
+        emailTextfield.delegate = self
+        passwordTextfield.delegate = self
+        
+    }
+    
     @IBAction func registerPressed(_ sender: Any) {
         
         if let email = emailTextfield.text, let password = passwordTextfield.text {
