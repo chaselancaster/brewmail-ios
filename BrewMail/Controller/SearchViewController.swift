@@ -21,15 +21,19 @@ class SearchViewController: UITableViewController {
         // Setting the VC as BeerManager's delegate
         beerManager.delegate = self
         
-//        beerManager.searchBeer(with: searchBar.text ?? "")
-        
     }
     
 }
 
 // MARK: - SearchBarDelegate code
 
-
+extension SearchViewController: UISearchBarDelegate {
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        beerManager.searchBeer(with: searchBar.text ?? "")
+    }
+    
+}
 
 // MARK: - BeerManagerDelegate code
 
