@@ -21,11 +21,13 @@ class SearchViewController: UITableViewController {
         // Setting the VC as BeerManager's delegate
         beerManager.delegate = self
         
-//        beerManager.searchBeer(with: "Oberon")
+//        beerManager.searchBeer(with: searchBar.text ?? "")
         
     }
     
 }
+
+// MARK: - BeerManagerDelegate code
 
 extension SearchViewController: BeerManagerDelegate {
     
