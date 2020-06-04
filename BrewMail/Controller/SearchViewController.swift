@@ -32,7 +32,7 @@ extension SearchViewController: UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         print("searchBarSearchButtonClicked")
-//        beerManager.searchBeer(with: searchBar.text ?? "")
+        beerManager.searchBeer(with: searchBar.text ?? "")
     }
     
 }
@@ -42,6 +42,7 @@ extension SearchViewController: UISearchBarDelegate {
 extension SearchViewController: BeerManagerDelegate {
     
     func didSearchBeer(_ beerManager: BeerManager, beers: [Beer]) {
+        print("didSearchBeer hit")
         beersFromSearch.append(contentsOf: beers)
     }
     
