@@ -39,7 +39,7 @@ struct BeerManager {
             let session = URLSession(configuration: .default)
             // Give session a task
             print("creating dataTask")
-            let dataTask = session.dataTask(with: url) { (data, response, error) in
+            let task = session.dataTask(with: url) { (data, response, error) in
                 // Check for errors
                 if error == nil && data != nil {
                     // parseJSON function
@@ -49,7 +49,7 @@ struct BeerManager {
                 }
                 
             }
-            dataTask.resume()
+            task.resume()
         }
         
     }
