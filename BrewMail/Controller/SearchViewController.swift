@@ -32,10 +32,16 @@ extension SearchViewController: UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         print("searchBarSearchButtonClicked")
-        beerManager.searchBeer(with: searchBar.text ?? "")
+        if let search = searchBar.text {
+          beerManager.searchBeer(with: search)
+        }
         // Removing the keyboard when search button is pressed
         searchBar.resignFirstResponder()
     }
+    
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        self.searchBar.endEditing(true)
+//    }
     
 }
 
