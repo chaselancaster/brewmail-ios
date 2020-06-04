@@ -27,6 +27,10 @@ class SearchViewController: UITableViewController {
     
 }
 
+// MARK: - SearchBarDelegate code
+
+
+
 // MARK: - BeerManagerDelegate code
 
 extension SearchViewController: BeerManagerDelegate {
