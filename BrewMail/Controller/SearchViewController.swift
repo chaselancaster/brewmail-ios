@@ -22,6 +22,9 @@ class SearchViewController: UITableViewController {
         beerManager.delegate = self
         searchBar.delegate = self
         
+        // Function so keyboard hides when tapped outside. See Keyboard Related Code below.
+        hideKeyboardWhenTappedAround()
+        
     }
     
 }
@@ -33,15 +36,11 @@ extension SearchViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         print("searchBarSearchButtonClicked")
         if let search = searchBar.text {
-          beerManager.searchBeer(with: search)
+            beerManager.searchBeer(with: search)
         }
         // Removing the keyboard when search button is pressed
         searchBar.resignFirstResponder()
     }
-    
-//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        self.searchBar.endEditing(true)
-//    }
     
 }
 
@@ -56,6 +55,24 @@ extension SearchViewController: BeerManagerDelegate {
     
     func didFailWithError(error: Error) {
         print(error, "<-- didFailWithError function hit in SearchVC")
+    }
+    
+}
+
+// MARK: - Keyboard Related Code
+
+extension SearchViewController {
+    
+    // Hides keyboard when tapped outside
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    // References function above
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
     
 }
