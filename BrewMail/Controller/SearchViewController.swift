@@ -76,3 +76,13 @@ extension SearchViewController {
     }
     
 }
+
+// MARK: - Table View Code
+
+extension SearchViewController {
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+}
