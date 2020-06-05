@@ -51,6 +51,10 @@ extension SearchViewController: BeerManagerDelegate {
     func didSearchBeer(_ beerManager: BeerManager, beers: [Beer]) {
         print("didSearchBeer hit")
         beersFromSearch.append(contentsOf: beers)
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+        print(beersFromSearch)
     }
     
     func didFailWithError(error: Error) {
@@ -89,6 +93,12 @@ extension SearchViewController {
         return beersFromSearch.count
     }
     
-    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.beerCell, for: indexPath)
+        
+        cell.textLabel?.text = beersFromSearch[indexPath.row].beer_name
+        
+        return cell
+    }
     
 }
