@@ -97,6 +97,7 @@ extension SearchViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.beerCell, for: indexPath)
         
         cell.textLabel?.text = beersFromSearch[indexPath.row].beer_name
+        cell.detailTextLabel?.text = "ABV: \(beersFromSearch[indexPath.row].beer_abv) | IBU: \(beersFromSearch[indexPath.row].beer_ibu)"
         
         return cell
     }
