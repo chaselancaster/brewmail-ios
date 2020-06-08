@@ -16,6 +16,8 @@ struct BeerModel {
     let beerAbv: Double
     let beerIbu: Int
     let beerDescription: String
+    let breweryId: Int
     let breweryName: String
+    let breweryLabel: String
     
 }
