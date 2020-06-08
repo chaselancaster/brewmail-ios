@@ -45,6 +45,7 @@ struct Beer: Codable {
 
 struct Brewery: Codable {
     
+    let brewery_id: Int
     let brewery_name: String
     let brewery_label: String
     
