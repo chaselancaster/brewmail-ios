@@ -29,7 +29,7 @@ struct BeersPacket: Codable {
 struct Beers: Codable {
     
     let beer: Beer
-    
+    let brewery: Brewery
 }
 
 struct Beer: Codable {
@@ -40,5 +40,12 @@ struct Beer: Codable {
     let beer_abv: Double
     let beer_ibu: Int
     let beer_description: String
+    
+}
+
+struct Brewery: Codable {
+    
+    let brewery_name: String
+    let brewery_label: String
     
 }

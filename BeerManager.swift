@@ -67,6 +67,7 @@ struct BeerManager {
             for item in beerSearchResults {
                 let beer = item.beer
                 let finalBeer = Beer(bid: beer.bid, beer_name: beer.beer_name, beer_label: beer.beer_label, beer_abv: beer.beer_abv, beer_ibu: beer.beer_ibu, beer_description: beer.beer_description)
+//                let otherBeer = BeerModel(
                 beerArray.append(finalBeer)
             }
 //            print(beerArray, "<--beerArray")
