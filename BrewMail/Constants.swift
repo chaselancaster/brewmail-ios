@@ -10,4 +10,5 @@ struct Constants {
     static let registerSegue = "RegisterToSearch"
     static let loginSegue = "LoginToSearch"
     static let beerCell = "beerCell"
+    static let showBeerSegue = "showBeerSegue"
 }

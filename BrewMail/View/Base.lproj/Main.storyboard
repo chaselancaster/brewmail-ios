@@ -168,7 +168,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" text="Oberon" id="543-HP-Fci">
-                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="56"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
@@ -196,6 +196,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="s7r-dR-SAt" kind="show" identifier="showBeerSegue" id="dre-zR-jqj"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -272,6 +275,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="HAd-sg-VxN"/>
                     </view>
+                    <navigationItem key="navigationItem" id="c3Z-sB-h68"/>
                     <connections>
                         <outlet property="beerABV" destination="itm-RN-4kV" id="E0v-XG-qKf"/>
                         <outlet property="beerDescription" destination="kxV-BL-5ts" id="61W-yG-GHk"/>
