@@ -106,4 +106,12 @@ extension SearchViewController {
         performSegue(withIdentifier: Constants.showBeerSegue, sender: self)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.description as! BeerShowViewController
+        
+        if let indexPath = tableView.indexPathForSelectedRow {
+            destinationVC.beerToShow = beersFromSearch[indexPath.row]
+        }
+    }
+    
 }
