@@ -19,7 +19,10 @@ class BeerShowViewController: UIViewController {
     @IBOutlet var breweryName: UILabel!
     @IBOutlet var beerDescription: UITextView!
     
-    
     var beerToShow: BeerModel?
+    
+    override func viewDidLoad() {
+        print(beerToShow, "<--beerToShow")
+    }
     
 }
