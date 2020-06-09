@@ -23,6 +23,16 @@ class BeerShowViewController: UIViewController {
     
     override func viewDidLoad() {
         print(beerToShow, "<--beerToShow")
+        
+        if let beer = beerToShow {
+            beerName.text = beer.beerName
+            beerStyle.text = beer.beerStyle
+            beerABV.text = "ABV: \(String(beer.beerAbv))"
+            beerIBU.text = "IBU: \(String(beer.beerIbu))"
+            breweryName.text = beer.breweryName
+            beerDescription.text = beer.beerDescription
+        }
+        
     }
     
 }
