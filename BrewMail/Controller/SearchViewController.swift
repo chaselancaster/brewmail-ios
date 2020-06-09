@@ -54,7 +54,7 @@ extension SearchViewController: BeerManagerDelegate {
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
-        print(beersFromSearch, "<-- beersFromSearch")
+//        print(beersFromSearch, "<-- beersFromSearch")
     }
     
     func didFailWithError(error: Error) {
@@ -107,7 +107,7 @@ extension SearchViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destinationVC = segue.description as! BeerShowViewController
+        let destinationVC = segue.destination as! BeerShowViewController
         
         if let indexPath = tableView.indexPathForSelectedRow {
             destinationVC.beerToShow = beersFromSearch[indexPath.row]
