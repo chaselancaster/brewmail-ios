@@ -14,7 +14,7 @@ class SearchViewController: UITableViewController {
     
     var beerManager = BeerManager()
     
-    var beersFromSearch = [Beer]()
+    var beersFromSearch = [BeerModel]()
     
     override func viewDidLoad() {
         
@@ -48,7 +48,7 @@ extension SearchViewController: UISearchBarDelegate {
 
 extension SearchViewController: BeerManagerDelegate {
     
-    func didSearchBeer(_ beerManager: BeerManager, beers: [Beer]) {
+    func didSearchBeer(_ beerManager: BeerManager, beers: [BeerModel]) {
         print("didSearchBeer hit")
         beersFromSearch.append(contentsOf: beers)
         DispatchQueue.main.async {
@@ -96,8 +96,8 @@ extension SearchViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.beerCell, for: indexPath)
         
-        cell.textLabel?.text = beersFromSearch[indexPath.row].beer_name
-        cell.detailTextLabel?.text = "ABV: \(beersFromSearch[indexPath.row].beer_abv) | IBU: \(beersFromSearch[indexPath.row].beer_ibu)"
+        cell.textLabel?.text = beersFromSearch[indexPath.row].beerName
+        cell.detailTextLabel?.text = "ABV: \(beersFromSearch[indexPath.row].beerAbv) | IBU: \(beersFromSearch[indexPath.row].beerIbu)"
         
         return cell
     }

@@ -9,7 +9,7 @@
 import Foundation
 
 protocol BeerManagerDelegate {
-    func didSearchBeer(_ beerManager: BeerManager, beers: [Beer])
+    func didSearchBeer(_ beerManager: BeerManager, beers: [BeerModel])
     func didFailWithError(error: Error)
 }
 
@@ -67,8 +67,9 @@ struct BeerManager {
             for item in beerSearchResults {
                 let beer = item.beer
                 let brewery = item.brewery
-                let finalBeer = Beer(bid: beer.bid, beer_name: beer.beer_name, beer_label: beer.beer_label, beer_abv: beer.beer_abv, beer_ibu: beer.beer_ibu, beer_description: beer.beer_description)
-                beerArray.append(finalBeer)
+//                let finalBeer = Beer(bid: beer.bid, beer_name: beer.beer_name, beer_label: beer.beer_label, beer_abv: beer.beer_abv, beer_ibu: beer.beer_ibu, beer_description: beer.beer_description)
+                let beerModel = BeerModel(bid: beer.bid, beerName: beer.beer_name, beerLabel: beer.beer_label, beerAbv: beer.beer_abv, beerIbu: beer.beer_ibu, beerDescription: beer.beer_description, breweryId: brewery.brewery_id, breweryName: brewery.brewery_name, breweryLabel: brewery.brewery_label)
+                beerArray.append(beerModel)
             }
 //            print(beerArray, "<--beerArray")
             return beerArray
