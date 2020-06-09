@@ -10,6 +10,16 @@ import UIKit
 
 class BeerShowViewController: UIViewController {
     
+    
+    @IBOutlet var beerImageView: UIImageView!
+    @IBOutlet var beerName: UILabel!
+    @IBOutlet var beerStyle: UILabel!
+    @IBOutlet var beerABV: UILabel!
+    @IBOutlet var beerIBU: UILabel!
+    @IBOutlet var breweryName: UILabel!
+    @IBOutlet var beerDescription: UITextView!
+    
+    
     var beerToShow: BeerModel?
     
 }
