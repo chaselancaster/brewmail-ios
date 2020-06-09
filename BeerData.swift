@@ -40,6 +40,7 @@ struct Beer: Codable {
     let beer_abv: Double
     let beer_ibu: Int
     let beer_description: String
+    let beer_style: String
     
 }
 
