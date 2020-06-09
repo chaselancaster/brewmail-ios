@@ -10,6 +10,6 @@ import UIKit
 
 class BeerShowViewController: UIViewController {
     
-    
+    var beerToShow: BeerModel?
     
 }
