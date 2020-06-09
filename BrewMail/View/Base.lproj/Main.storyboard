@@ -272,6 +272,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="HAd-sg-VxN"/>
                     </view>
+                    <connections>
+                        <outlet property="beerABV" destination="itm-RN-4kV" id="E0v-XG-qKf"/>
+                        <outlet property="beerDescription" destination="kxV-BL-5ts" id="61W-yG-GHk"/>
+                        <outlet property="beerIBU" destination="hPn-8n-ajZ" id="Cj3-ik-zCp"/>
+                        <outlet property="beerImageView" destination="Hyl-bz-SBK" id="MhH-u5-5rG"/>
+                        <outlet property="beerName" destination="oJq-7a-R9d" id="5t8-Nh-qCO"/>
+                        <outlet property="beerStyle" destination="lf9-El-x4v" id="eW1-md-ipV"/>
+                        <outlet property="breweryName" destination="wQ7-Ny-izi" id="TQJ-3Z-C8a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pc2-65-Hbd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
