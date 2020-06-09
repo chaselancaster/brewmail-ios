@@ -16,6 +16,7 @@
 		7458311B248065240003D030 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74583119248065240003D030 /* LaunchScreen.storyboard */; };
 		7460766B248868F600407E18 /* BeerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7460766A248868F600407E18 /* BeerModel.swift */; };
 		749F105B248091A10028ED59 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749F105A248091A10028ED59 /* RegisterViewController.swift */; };
+		74DB22F1248F0A050074B98C /* BeerShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DB22F0248F0A050074B98C /* BeerShowViewController.swift */; };
 		74E1455524806E4800D733B7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 74E1455424806E4800D733B7 /* GoogleService-Info.plist */; };
 		74F9B7322485A04C000A7239 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F9B7312485A04C000A7239 /* LoginViewController.swift */; };
 		74F9B7342485A388000A7239 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F9B7332485A388000A7239 /* Constants.swift */; };
@@ -38,6 +39,7 @@
 		7458311C248065240003D030 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7460766A248868F600407E18 /* BeerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerModel.swift; sourceTree = "<group>"; };
 		749F105A248091A10028ED59 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		74DB22F0248F0A050074B98C /* BeerShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerShowViewController.swift; sourceTree = "<group>"; };
 		74E1455424806E4800D733B7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		74F9B7312485A04C000A7239 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		74F9B7332485A388000A7239 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				74F9B7352485A9BF000A7239 /* SearchViewController.swift */,
 				74F9B7312485A04C000A7239 /* LoginViewController.swift */,
 				749F105A248091A10028ED59 /* RegisterViewController.swift */,
+				74DB22F0248F0A050074B98C /* BeerShowViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				74F9B73C2485D7AE000A7239 /* BeerData.swift in Sources */,
 				7460766B248868F600407E18 /* BeerModel.swift in Sources */,
 				74F9B7362485A9BF000A7239 /* SearchViewController.swift in Sources */,
+				74DB22F1248F0A050074B98C /* BeerShowViewController.swift in Sources */,
 				7458310F248065230003D030 /* AppDelegate.swift in Sources */,
 				74583111248065230003D030 /* SceneDelegate.swift in Sources */,
 				74F9B7322485A04C000A7239 /* LoginViewController.swift in Sources */,

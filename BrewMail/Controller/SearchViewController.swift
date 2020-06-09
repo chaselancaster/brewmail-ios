@@ -54,7 +54,7 @@ extension SearchViewController: BeerManagerDelegate {
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
-        print(beersFromSearch)
+        print(beersFromSearch, "<-- beersFromSearch")
     }
     
     func didFailWithError(error: Error) {
