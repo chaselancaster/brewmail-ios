@@ -105,6 +105,7 @@ extension SearchViewController {
         cell.beerName.text = beer.beerName
         cell.breweryName.text = beer.breweryName
         cell.beerStyle.text = beer.beerStyle
+        cell.beerLabel.sd_setImage(with: URL(string: beer.beerLabel), placeholderImage: UIImage(named: "placeholder.png"))
 //        cell.textLabel?.text = beer.beerName
 //        cell.detailTextLabel?.text = "\(beer.beerStyle) ABV: \(beer.beerAbv) | IBU: \(beer.beerIbu)"
         
