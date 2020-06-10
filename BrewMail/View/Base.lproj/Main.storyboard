@@ -173,11 +173,11 @@
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="beerCell" rowHeight="95" id="6fI-V4-Rz7" customClass="BeerTableViewCell" customModule="BrewMail" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="84" width="375" height="95"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="beerCell" rowHeight="100" id="6fI-V4-Rz7" customClass="BeerTableViewCell" customModule="BrewMail" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="84" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6fI-V4-Rz7" id="zpp-Eg-d8F">
-                                    <rect key="frame" x="0.0" y="0.0" width="348" height="95"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="348" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IuX-qo-KYk">

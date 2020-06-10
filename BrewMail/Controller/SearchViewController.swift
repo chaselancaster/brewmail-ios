@@ -88,7 +88,7 @@ extension SearchViewController {
 extension SearchViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 95
+        return 100
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
