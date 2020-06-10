@@ -16,4 +16,7 @@ pod 'Firebase/Firestore'
 
 # https://firebase.google.com/docs/ios/setup#available-pods
 
+# SDWebImage
+pod 'SDWebImage', '~> 5.0'
+
 end
