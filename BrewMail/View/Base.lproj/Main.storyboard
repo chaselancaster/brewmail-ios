@@ -173,7 +173,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="beerCell" rowHeight="95" id="6fI-V4-Rz7">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="beerCell" rowHeight="95" id="6fI-V4-Rz7" customClass="BeerTableViewCell" customModule="BrewMail" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="84" width="375" height="95"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6fI-V4-Rz7" id="zpp-Eg-d8F">
@@ -219,7 +219,6 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="BrewMail" id="90P-cK-raq"/>
                     <connections>
-                        <outlet property="beerLabel" destination="IuX-qo-KYk" id="PNZ-7v-ySy"/>
                         <outlet property="searchBar" destination="543-HP-Fci" id="EJU-GI-XN1"/>
                     </connections>
                 </tableViewController>

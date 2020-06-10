@@ -11,11 +11,7 @@ import UIKit
 class SearchViewController: UITableViewController {
     
     @IBOutlet var searchBar: UISearchBar!
-    @IBOutlet var beerLabel: UIImageView!
-    @IBOutlet var beerName: UILabel!
-    @IBOutlet var breweryName: UILabel!
-    @IBOutlet var beerStyle: UILabel!
-    
+
     var beerManager = BeerManager()
     
     var beersFromSearch = [BeerModel]()
@@ -68,7 +64,7 @@ extension SearchViewController: BeerManagerDelegate {
     
 }
 
-// MARK: - Keyboard Related Code
+// MARK: - Keyboard Related code
 
 extension SearchViewController {
     
@@ -86,7 +82,7 @@ extension SearchViewController {
     
 }
 
-// MARK: - Table View Code
+// MARK: - Table View code
 
 extension SearchViewController {
     
@@ -114,5 +110,13 @@ extension SearchViewController {
             destinationVC.beerToShow = beersFromSearch[indexPath.row]
         }
     }
+    
+}
+
+// MARK: - BeerCell code
+
+class BeerTableViewCell: UITableViewCell {
+    
+    
     
 }
