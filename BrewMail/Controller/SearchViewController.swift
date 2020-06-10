@@ -95,10 +95,13 @@ extension SearchViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.beerCell, for: indexPath)
-        
-        cell.textLabel?.text = beersFromSearch[indexPath.row].beerName
-        cell.detailTextLabel?.text = "\(beersFromSearch[indexPath.row].beerStyle) ABV: \(beersFromSearch[indexPath.row].beerAbv) | IBU: \(beersFromSearch[indexPath.row].beerIbu)"
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.beerCell, for: indexPath) as! BeerTableViewCell
+        let beer = beersFromSearch[indexPath.row]
+        cell.beerName.text = beer.beerName
+        cell.breweryName.text = beer.breweryName
+        cell.beerStyle.text = beer.beerStyle
+//        cell.textLabel?.text = beer.beerName
+//        cell.detailTextLabel?.text = "\(beer.beerStyle) ABV: \(beer.beerAbv) | IBU: \(beer.beerIbu)"
         
         return cell
     }
