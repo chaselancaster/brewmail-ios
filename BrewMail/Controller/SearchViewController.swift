@@ -101,11 +101,7 @@ extension SearchViewController {
         
         return cell
     }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: Constants.showBeerSegue, sender: self)
-    }
-    
+ 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationVC = segue.destination as! BeerShowViewController
         
