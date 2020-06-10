@@ -49,6 +49,7 @@ extension SearchViewController: UISearchBarDelegate {
 extension SearchViewController: BeerManagerDelegate {
     
     func didSearchBeer(_ beerManager: BeerManager, beers: [BeerModel]) {
+        beersFromSearch = []
         print("didSearchBeer hit")
         beersFromSearch.append(contentsOf: beers)
         DispatchQueue.main.async {
