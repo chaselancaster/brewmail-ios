@@ -32,6 +32,7 @@ class BeerShowViewController: UIViewController {
             beerIBU.text = "IBU: \(String(beer.beerIbu))"
             breweryName.text = beer.breweryName
             beerDescription.text = beer.beerDescription
+            beerImageView.sd_setImage(with: URL(string: beer.beerLabel), placeholderImage: UIImage(named: "placeholder.png"))
         }
         
     }
