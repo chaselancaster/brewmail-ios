@@ -11,6 +11,10 @@ import UIKit
 class SearchViewController: UITableViewController {
     
     @IBOutlet var searchBar: UISearchBar!
+    @IBOutlet var beerLabel: UIImageView!
+    @IBOutlet var beerName: UILabel!
+    @IBOutlet var breweryName: UILabel!
+    @IBOutlet var beerStyle: UILabel!
     
     var beerManager = BeerManager()
     
