@@ -208,6 +208,10 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="beerLabel" destination="IuX-qo-KYk" id="6fZ-FL-bGW"/>
+                                    <outlet property="beerName" destination="XM3-Hj-1pr" id="UDc-wt-BV3"/>
+                                    <outlet property="beerStyle" destination="TG7-41-wpu" id="ehY-59-i3C"/>
+                                    <outlet property="breweryName" destination="RmF-RC-3CQ" id="v1Q-e7-9ci"/>
                                     <segue destination="s7r-dR-SAt" kind="show" identifier="showBeerSegue" id="dre-zR-jqj"/>
                                 </connections>
                             </tableViewCell>

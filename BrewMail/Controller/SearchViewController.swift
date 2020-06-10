@@ -117,6 +117,9 @@ extension SearchViewController {
 
 class BeerTableViewCell: UITableViewCell {
     
-    
+    @IBOutlet var beerLabel: UIImageView!
+    @IBOutlet var beerName: UILabel!
+    @IBOutlet var breweryName: UILabel!
+    @IBOutlet var beerStyle: UILabel!
     
 }
