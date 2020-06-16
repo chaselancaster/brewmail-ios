@@ -38,4 +38,8 @@ class BeerShowViewController: UIViewController {
         
     }
     
+    
+    @IBAction func addToCellarButtonTapped(_ sender: Any) {
+    }
+    
 }

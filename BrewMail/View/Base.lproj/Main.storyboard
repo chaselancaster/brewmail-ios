@@ -290,6 +290,9 @@
                                 <rect key="frame" x="143" y="696" width="89" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add to Cellar"/>
+                                <connections>
+                                    <action selector="addToCellarButtonTapped:" destination="s7r-dR-SAt" eventType="touchUpInside" id="cHB-9q-U7f"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
