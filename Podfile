@@ -13,6 +13,7 @@ pod 'Firebase/Analytics'
 # add pods for any other desired Firebase products
 pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
+pod 'FirebaseFirestoreSwift'
 
 # https://firebase.google.com/docs/ios/setup#available-pods
 
