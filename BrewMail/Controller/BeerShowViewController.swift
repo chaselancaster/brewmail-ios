@@ -6,8 +6,9 @@
 //  Copyright © 2020 Chase Lancaster. All rights reserved.
 //
 
-import UIKit
+import Firebase
 import SDWebImage
+import UIKit
 
 class BeerShowViewController: UIViewController {
     
