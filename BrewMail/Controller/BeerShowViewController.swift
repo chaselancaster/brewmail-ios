@@ -12,6 +12,7 @@ import UIKit
 
 class BeerShowViewController: UIViewController {
     
+    let db = Firestore.firestore()
     
     @IBOutlet var beerImageView: UIImageView!
     @IBOutlet var beerName: UILabel!
@@ -38,8 +39,32 @@ class BeerShowViewController: UIViewController {
         
     }
     
-    
     @IBAction func addToCellarButtonTapped(_ sender: Any) {
+        if let beer = beerToShow {
+            
+            // Adding a new cellarBeer document with a generated id.
+            var ref: DocumentReference? = nil
+            ref = db.collection("cellarBeer").addDocument(data: [
+                "bid": beer.bid,
+                "beerName": beer.beerName,
+                "beerLabel": beer.beerLabel,
+                "beerAbv": beer.beerAbv,
+                "beerIbu": beer.beerIbu,
+                "beerDescription": beer.beerDescription,
+                "beerStyle": beer.beerStyle,
+                "breweryId": beer.breweryId,
+                "breweryName": beer.breweryName,
+                "breweryLabel": beer.breweryLabel
+            ]) { err in
+                if let err = err {
+                    print("Error adding cellarBeer document: \(err)")
+                } else {
+                    print("beerCellar document added with ID: \(ref!.documentID)")
+                }
+            }
+            
+        }
+    
     }
     
 }
