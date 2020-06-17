@@ -41,6 +41,8 @@ class BeerShowViewController: UIViewController {
     
     @IBAction func addToCellarButtonTapped(_ sender: Any) {
         if let beer = beerToShow {
+            // Finding current user
+            guard let uid = Auth.auth().currentUser?.uid else { return }
             
             // Adding a new cellarBeer document with a generated id.
             var ref: DocumentReference? = nil
