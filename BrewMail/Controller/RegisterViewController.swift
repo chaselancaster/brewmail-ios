@@ -30,6 +30,8 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
                 } else {
                     // Navigate to the main search field
                     print("User successfully registered")
+                    guard let uid = Auth.auth().currentUser?.uid else { return }
+                    print(uid, "<--uid")
                     self.performSegue(withIdentifier: Constants.registerSegue, sender: self)
                 }
             }
