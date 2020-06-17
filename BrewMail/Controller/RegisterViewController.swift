@@ -14,6 +14,8 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var emailTextfield: UITextField!
     @IBOutlet var passwordTextfield: UITextField!
     
+    let db = Firestore.firestore()
+    
     override func viewDidLoad() {
         
         emailTextfield.delegate = self
