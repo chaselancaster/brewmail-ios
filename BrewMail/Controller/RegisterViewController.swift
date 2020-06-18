@@ -46,7 +46,6 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
                             print("userID successfully added to db")
                         }
                     }
-                    print(uid, "<--uid")
                     self.performSegue(withIdentifier: Constants.registerSegue, sender: self)
                 }
             }
