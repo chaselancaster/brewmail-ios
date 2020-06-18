@@ -33,6 +33,13 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
                     // Navigate to the main search field
                     print("User successfully registered")
                     guard let uid = Auth.auth().currentUser?.uid else { return }
+                    self.db.collection("users").document("\(uid)").setData(["accountEmail":"\(email)"]) { (err) in
+                        if err != nil {
+                            print("Error adding uid to userID")
+                        } else {
+                            print("userID successfully added to db")
+                        }
+                    }
                     print(uid, "<--uid")
                     self.performSegue(withIdentifier: Constants.registerSegue, sender: self)
                 }
