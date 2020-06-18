@@ -10,7 +10,8 @@ import UIKit
 import Firebase
 
 class RegisterViewController: UIViewController, UITextFieldDelegate {
-    
+    @IBOutlet var firstNameTextfield: UITextField!
+    @IBOutlet var lastNameTextfield: UITextField!
     @IBOutlet var emailTextfield: UITextField!
     @IBOutlet var passwordTextfield: UITextField!
     

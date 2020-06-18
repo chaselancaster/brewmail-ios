@@ -95,6 +95,8 @@
                     <navigationItem key="navigationItem" title="BrewMail" id="cEX-Wb-Voy"/>
                     <connections>
                         <outlet property="emailTextfield" destination="bAS-Wl-hOL" id="iC0-BV-fLK"/>
+                        <outlet property="firstNameTextfield" destination="alG-AV-fhx" id="PBR-qU-yVa"/>
+                        <outlet property="lastNameTextfield" destination="iDf-OS-OcM" id="OY6-La-0Os"/>
                         <outlet property="passwordTextfield" destination="66W-H4-rvJ" id="PXE-a4-dKo"/>
                         <segue destination="gr1-jp-pvW" kind="show" identifier="RegisterToSearch" id="bUq-8h-PjZ"/>
                     </connections>
