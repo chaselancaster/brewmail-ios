@@ -26,7 +26,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func registerPressed(_ sender: Any) {
         
-        if let email = emailTextfield.text, let password = passwordTextfield.text {
+        if let email = emailTextfield.text, let password = passwordTextfield.text, let firstName = firstNameTextfield.text, let lastName = lastNameTextfield.text {
             Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
                 if let e = error {
                     print(e, "<-- Error in Register Auth")
@@ -34,7 +34,12 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
                     // Navigate to the main search field
                     print("User successfully registered")
                     guard let uid = Auth.auth().currentUser?.uid else { return }
-                    self.db.collection("users").document("\(uid)").setData(["accountEmail":"\(email)"]) { (err) in
+                    self.db.collection("users").document("\(uid)").setData([
+                        "firstName":"\(firstName)",
+                        "lastName":"\(lastName)",
+                        "accountEmail":"\(email)"
+                        ])
+                    { (err) in
                         if err != nil {
                             print("Error adding uid to userID")
                         } else {
@@ -46,7 +51,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
                 }
             }
         }
-    
+        
     }
     
     // MARK: - Keyboard Related Code
