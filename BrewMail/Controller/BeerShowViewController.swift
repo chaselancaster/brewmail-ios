@@ -25,7 +25,7 @@ class BeerShowViewController: UIViewController {
     var beerToShow: BeerModel?
     
     override func viewDidLoad() {
-        print(beerToShow, "<--beerToShow")
+//        print(beerToShow, "<--beerToShow")
         
         if let beer = beerToShow {
             beerName.text = beer.beerName
@@ -41,7 +41,7 @@ class BeerShowViewController: UIViewController {
     
     @IBAction func addToCellarButtonTapped(_ sender: Any) {
         if let beer = beerToShow {
-            // Finding current user
+            // Finding current user's id
             guard let uid = Auth.auth().currentUser?.uid else { return }
             
             let beerData: [String: Any] = [
