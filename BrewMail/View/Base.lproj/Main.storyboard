@@ -341,17 +341,82 @@
                     </tabBar>
                     <connections>
                         <segue destination="gr1-jp-pvW" kind="relationship" relationship="viewControllers" id="RzK-VD-heG"/>
+                        <segue destination="Wpu-3Y-lv1" kind="relationship" relationship="viewControllers" id="0Uz-Nc-vWp"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iEQ-Xb-4al" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2685.5999999999999" y="136.69950738916256"/>
         </scene>
+        <!--BrewMail-->
+        <scene sceneID="2CU-my-mg3">
+            <objects>
+                <tableViewController id="Wpu-3Y-lv1" customClass="CellarViewController" customModule="BrewMail" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="QOD-oi-IP3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="beerCell" rowHeight="100" id="sge-hy-ofd" customClass="BeerTableViewCell" customModule="BrewMail" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sge-hy-ofd" id="Ru7-bL-fEm">
+                                    <rect key="frame" x="0.0" y="0.0" width="348" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oPy-hn-vw0">
+                                            <rect key="frame" x="8" y="14" width="79" height="73"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Brewery Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNF-OQ-BGd">
+                                            <rect key="frame" x="95" y="40" width="245" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Beer Style" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5L-uH-kcd">
+                                            <rect key="frame" x="95" y="68" width="245" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Beer Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53Q-Zz-2fc">
+                                            <rect key="frame" x="95" y="14" width="245" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="beerLabel" destination="oPy-hn-vw0" id="wKw-MN-WxQ"/>
+                                    <outlet property="beerName" destination="53Q-Zz-2fc" id="LEA-zq-WMV"/>
+                                    <outlet property="beerStyle" destination="m5L-uH-kcd" id="Z6g-co-jji"/>
+                                    <outlet property="breweryName" destination="WNF-OQ-BGd" id="PXn-kr-vwA"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Wpu-3Y-lv1" id="Hun-IM-pnC"/>
+                            <outlet property="delegate" destination="Wpu-3Y-lv1" id="1Qt-wt-T0C"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Cellar" image="folder" catalog="system" id="Bzh-RJ-UBi"/>
+                    <navigationItem key="navigationItem" title="BrewMail" id="Cgy-te-KMm"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q5a-9o-49Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3628" y="871"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="YQc-LQ-VuB"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="folder" catalog="system" width="128" height="95"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
     </resources>
 </document>
