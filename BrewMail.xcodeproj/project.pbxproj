@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7423AF412486BC6A0007AED2 /* BeerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423AF402486BC6A0007AED2 /* BeerManager.swift */; };
+		743F3EE7249D64AC00D31444 /* CellarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743F3EE6249D64AC00D31444 /* CellarViewController.swift */; };
 		7458310F248065230003D030 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7458310E248065230003D030 /* AppDelegate.swift */; };
 		74583111248065230003D030 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74583110248065230003D030 /* SceneDelegate.swift */; };
 		74583113248065230003D030 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74583112248065230003D030 /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 		204A48C4A7B6635B5143DFE8 /* Pods-BrewMail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewMail.release.xcconfig"; path = "Target Support Files/Pods-BrewMail/Pods-BrewMail.release.xcconfig"; sourceTree = "<group>"; };
 		70859F984E290D831DED602C /* Pods-BrewMail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewMail.debug.xcconfig"; path = "Target Support Files/Pods-BrewMail/Pods-BrewMail.debug.xcconfig"; sourceTree = "<group>"; };
 		7423AF402486BC6A0007AED2 /* BeerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerManager.swift; sourceTree = "<group>"; };
+		743F3EE6249D64AC00D31444 /* CellarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellarViewController.swift; sourceTree = "<group>"; };
 		7458310B248065230003D030 /* BrewMail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrewMail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7458310E248065230003D030 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74583110248065230003D030 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				74F9B7312485A04C000A7239 /* LoginViewController.swift */,
 				749F105A248091A10028ED59 /* RegisterViewController.swift */,
 				74DB22F0248F0A050074B98C /* BeerShowViewController.swift */,
+				743F3EE6249D64AC00D31444 /* CellarViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				74F9B7322485A04C000A7239 /* LoginViewController.swift in Sources */,
 				749F105B248091A10028ED59 /* RegisterViewController.swift in Sources */,
 				74F9B7342485A388000A7239 /* Constants.swift in Sources */,
+				743F3EE7249D64AC00D31444 /* CellarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
