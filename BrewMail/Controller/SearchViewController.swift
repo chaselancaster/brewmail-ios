@@ -26,11 +26,6 @@ class SearchViewController: UITableViewController {
         // Function so keyboard hides when tapped outside. See Keyboard Related Code below.
         hideKeyboardWhenTappedAround()
         
-        // remove left buttons (in case you added some)
-         self.navigationItem.leftBarButtonItems = []
-        // hide the default back buttons
-         self.navigationItem.hidesBackButton = true
-        
     }
     
 }

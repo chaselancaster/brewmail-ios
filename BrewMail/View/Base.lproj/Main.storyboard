@@ -406,6 +406,12 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Cellar" image="folder" catalog="system" id="Bzh-RJ-UBi"/>
                     <navigationItem key="navigationItem" title="BrewMail" id="Cgy-te-KMm"/>
+                    <connections>
+                        <outlet property="beerLabel" destination="oPy-hn-vw0" id="e66-JQ-DZb"/>
+                        <outlet property="beerName" destination="53Q-Zz-2fc" id="mxv-GH-pgL"/>
+                        <outlet property="beerStyle" destination="m5L-uH-kcd" id="Dcb-FA-0mJ"/>
+                        <outlet property="breweryName" destination="WNF-OQ-BGd" id="svp-zO-3Ya"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q5a-9o-49Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
