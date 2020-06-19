@@ -6,6 +6,7 @@
 //  Copyright © 2020 Chase Lancaster. All rights reserved.
 //
 
+import Firebase
 import Foundation
 import UIKit
 
@@ -15,6 +16,11 @@ class CellarViewController: UITableViewController {
     @IBOutlet var beerName: UILabel!
     @IBOutlet var breweryName: UILabel!
     @IBOutlet var beerStyle: UILabel!
+    
+    
+    override func viewDidLoad() {
+        <#code#>
+    }
     
 }
 
