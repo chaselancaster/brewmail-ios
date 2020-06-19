@@ -17,11 +17,24 @@ class CellarViewController: UITableViewController {
     @IBOutlet var breweryName: UILabel!
     @IBOutlet var beerStyle: UILabel!
     
+    let cellarBeer = [String: Any]()
+    
     let db = Firestore.firestore()
     
     override func viewDidLoad() {
         
+        // Finding current user's id
+        guard let uid = Auth.auth().currentUser?.uid else { return }
         
+        db.collection("users").document("\(uid)").collection("cellarBeer").getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    print("\(document.documentID) => \(document.data())")
+                }
+            }
+        }
         
     }
     
