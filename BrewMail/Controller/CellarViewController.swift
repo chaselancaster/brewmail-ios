@@ -17,9 +17,12 @@ class CellarViewController: UITableViewController {
     @IBOutlet var breweryName: UILabel!
     @IBOutlet var beerStyle: UILabel!
     
+    let db = Firestore.firestore()
     
     override func viewDidLoad() {
-        <#code#>
+        
+        
+        
     }
     
 }
