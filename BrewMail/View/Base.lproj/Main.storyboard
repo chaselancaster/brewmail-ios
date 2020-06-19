@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hex-3D-FGs">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -98,7 +98,7 @@
                         <outlet property="firstNameTextfield" destination="alG-AV-fhx" id="PBR-qU-yVa"/>
                         <outlet property="lastNameTextfield" destination="iDf-OS-OcM" id="OY6-La-0Os"/>
                         <outlet property="passwordTextfield" destination="66W-H4-rvJ" id="PXE-a4-dKo"/>
-                        <segue destination="gr1-jp-pvW" kind="show" identifier="RegisterToSearch" id="bUq-8h-PjZ"/>
+                        <segue destination="rsm-Q7-Dp6" kind="show" identifier="RegisterToSearch" id="bUq-8h-PjZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GVo-yU-FAQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -166,7 +166,7 @@
                     <connections>
                         <outlet property="emailTextfield" destination="dYR-PV-Oyv" id="0Fh-Pj-1A1"/>
                         <outlet property="passwordTextfield" destination="OgQ-eZ-9Yt" id="m0x-EI-3Ea"/>
-                        <segue destination="gr1-jp-pvW" kind="show" identifier="LoginToSearch" id="YQc-LQ-VuB"/>
+                        <segue destination="rsm-Q7-Dp6" kind="show" identifier="LoginToSearch" id="YQc-LQ-VuB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gLc-t9-fm3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -235,6 +235,7 @@
                             <outlet property="delegate" destination="gr1-jp-pvW" id="gyP-ne-Pnn"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="64Z-13-tfN"/>
                     <navigationItem key="navigationItem" title="BrewMail" id="90P-cK-raq"/>
                     <connections>
                         <outlet property="searchBar" destination="543-HP-Fci" id="EJU-GI-XN1"/>
@@ -242,7 +243,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c9n-dv-FJM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2685.5999999999999" y="136.69950738916256"/>
+            <point key="canvasLocation" x="3628" y="136.69950738916256"/>
         </scene>
         <!--Beer Show View Controller-->
         <scene sceneID="HzK-oM-EbF">
@@ -325,10 +326,32 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pc2-65-Hbd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3436" y="136.69950738916256"/>
+            <point key="canvasLocation" x="4378.3999999999996" y="136.69950738916256"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="XWg-Yj-uGZ">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="rsm-Q7-Dp6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="t9k-Ct-D2Y"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Rw4-wW-YwR">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="gr1-jp-pvW" kind="relationship" relationship="viewControllers" id="RzK-VD-heG"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iEQ-Xb-4al" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2685.5999999999999" y="136.69950738916256"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="bUq-8h-PjZ"/>
+        <segue reference="YQc-LQ-VuB"/>
     </inferredMetricsTieBreakers>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+    </resources>
 </document>
