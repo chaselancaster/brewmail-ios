@@ -38,6 +38,9 @@ class BeerShowViewController: UIViewController {
             beerImageView.sd_setImage(with: URL(string: beer.beerLabel), placeholderImage: UIImage(named: "placeholder.png"))
         }
         
+        // Hiding beerAddedLabel
+        beerAddedLabel.isHidden = true
+        
     }
     
     @IBAction func addToCellarButtonTapped(_ sender: Any) {
@@ -62,6 +65,7 @@ class BeerShowViewController: UIViewController {
                     print("Error adding cellarBeer document: \(err)")
                 } else {
                     print("Beer successfully added to cellarBeer")
+                    self.beerAddedLabel.isHidden = false
                 }
             }
             
