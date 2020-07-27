@@ -66,6 +66,9 @@ class BeerShowViewController: UIViewController {
                 } else {
                     print("Beer successfully added to cellarBeer")
                     self.beerAddedLabel.isHidden = false
+                    UIView.animate(withDuration: 5) {
+                        self.beerAddedLabel.alpha = 0
+                    }
                 }
             }
             
