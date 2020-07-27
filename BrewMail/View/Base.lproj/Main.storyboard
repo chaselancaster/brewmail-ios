@@ -323,6 +323,7 @@
                     <navigationItem key="navigationItem" id="c3Z-sB-h68"/>
                     <connections>
                         <outlet property="beerABV" destination="itm-RN-4kV" id="E0v-XG-qKf"/>
+                        <outlet property="beerAddedLabel" destination="dLS-99-Ur1" id="obW-3s-CMT"/>
                         <outlet property="beerDescription" destination="kxV-BL-5ts" id="61W-yG-GHk"/>
                         <outlet property="beerIBU" destination="hPn-8n-ajZ" id="Cj3-ik-zCp"/>
                         <outlet property="beerImageView" destination="Hyl-bz-SBK" id="MhH-u5-5rG"/>

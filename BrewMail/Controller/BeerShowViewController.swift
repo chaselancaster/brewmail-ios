@@ -21,6 +21,7 @@ class BeerShowViewController: UIViewController {
     @IBOutlet var beerIBU: UILabel!
     @IBOutlet var breweryName: UILabel!
     @IBOutlet var beerDescription: UITextView!
+    @IBOutlet var beerAddedLabel: UILabel!
     
     var beerToShow: BeerModel?
     
