@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct BeerModel {
+struct BeerModel: Codable {
     
     let bid: Int
     let beerName: String
