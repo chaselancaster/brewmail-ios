@@ -17,7 +17,7 @@ class CellarViewController: UITableViewController {
     @IBOutlet var breweryName: UILabel!
     @IBOutlet var beerStyle: UILabel!
     
-    let cellarBeer = [String: Any]()
+    var cellarBeer = [[String:Any]]()
     
     let db = Firestore.firestore()
     
@@ -32,7 +32,9 @@ class CellarViewController: UITableViewController {
             } else {
                 for document in querySnapshot!.documents {
                     print("\(document.documentID) => \(document.data())")
+                    self.cellarBeer.append(document.data())
                 }
+                print("cellarBeer ---->", self.cellarBeer)
             }
         }
         
@@ -40,7 +42,7 @@ class CellarViewController: UITableViewController {
     
 }
 
-// MARK: - Table View code
+// MARK: - Table View Code
 
 //extension CellarViewController {
 //
@@ -53,12 +55,12 @@ class CellarViewController: UITableViewController {
 //    }
 //
 //    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return beersFromSearch.count
+//        return cellarBeer.count
 //    }
 //
 //    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 //        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.beerCell, for: indexPath) as! BeerTableViewCell
-//        let beer = beersFromSearch[indexPath.row]
+//        let beer = cellarBeer[indexPath.row]
 //        cell.beerName.text = beer.beerName
 //        cell.breweryName.text = beer.breweryName
 //        cell.beerStyle.text = beer.beerStyle
@@ -73,7 +75,7 @@ class CellarViewController: UITableViewController {
 //        let destinationVC = segue.destination as! BeerShowViewController
 //
 //        if let indexPath = tableView.indexPathForSelectedRow {
-//            destinationVC.beerToShow = beersFromSearch[indexPath.row]
+//            destinationVC.beerToShow = cellarBeer[indexPath.row]
 //        }
 //    }
 //
