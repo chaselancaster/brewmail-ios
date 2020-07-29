@@ -50,6 +50,8 @@ class CellarViewController: UITableViewController {
                     return try? document.data(as: BeerModel.self)
                 }
 //                print("firestoreCellarBeer -->", firestoreCellarBeer)
+                self.cellarBeer = firestoreCellarBeer
+                print("cellarBeer after firestoreCellarBeer -->", self.cellarBeer)
             }
             
         }
