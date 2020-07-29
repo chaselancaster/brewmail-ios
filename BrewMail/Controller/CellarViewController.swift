@@ -7,6 +7,7 @@
 //
 
 import Firebase
+import FirebaseFirestoreSwift
 import Foundation
 import UIKit
 
@@ -38,21 +39,47 @@ class CellarViewController: UITableViewController {
         // Finding current user's id
         guard let uid = Auth.auth().currentUser?.uid else { return }
         
-        db.collection("users").document("\(uid)").collection("cellarBeer").getDocuments() { (querySnapshot, err) in
-            if let err = err {
-                print("Error getting documents: \(err)")
-            } else {
-                for document in querySnapshot!.documents {
-                    print("\(document.documentID) => \(document.data())")
-                    self.cellarBeer.append(document.data())
+        let docRef = db.collection("users").document("\(uid)").collection("cellarBeer")
+
+        docRef.getDocuments { (documents, error) in
+           
+            let result = Result {
+              try documents?.data(as: BeerModel.self)
+            }
+            switch result {
+            case .success(let city):
+                if let city = city {
+                    // A `City` value was successfully initialized from the DocumentSnapshot.
+                    print("City: \(city)")
+                } else {
+                    // A nil value was successfully initialized from the DocumentSnapshot,
+                    // or the DocumentSnapshot was nil.
+                    print("Document does not exist")
                 }
-                print("cellarBeer ---->", self.cellarBeer)
-                // Reloading tableView to display cellar beer to user
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
+            case .failure(let error):
+                // A `City` value could not be initialized from the DocumentSnapshot.
+                print("Error decoding city: \(error)")
             }
         }
+          
+        
+        
+        
+//        db.collection("users").document("\(uid)").collection("cellarBeer").getDocuments() { (querySnapshot, err) in
+//            if let err = err {
+//                print("Error getting documents: \(err)")
+//            } else {
+//                for document in querySnapshot!.documents {
+//                    print("\(document.documentID) => \(document.data())")
+//                    self.cellarBeer.append(document.data())
+//                }
+//                print("cellarBeer ---->", self.cellarBeer)
+//                // Reloading tableView to display cellar beer to user
+//                DispatchQueue.main.async {
+//                    self.tableView.reloadData()
+//                }
+//            }
+//        }
         
     }
     
