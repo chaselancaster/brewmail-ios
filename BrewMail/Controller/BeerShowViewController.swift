@@ -7,6 +7,7 @@
 //
 
 import Firebase
+import FirebaseFirestoreSwift
 import SDWebImage
 import UIKit
 
@@ -51,7 +52,7 @@ class BeerShowViewController: UIViewController {
             let beerToAdd = BeerModel(bid: beer.bid, beerName: beer.beerName, beerLabel: beer.beerLabel, beerAbv: beer.beerAbv, beerIbu: beer.beerIbu, beerDescription: beer.beerDescription, beerStyle: beer.beerStyle, breweryId: beer.breweryId, breweryName: beer.breweryName, breweryLabel: beer.breweryLabel)
             
             do {
-                try db.collection("users").document("\(uid)").collection("cellarBeer").document("\(beer.beerName)").setData(beerToAdd)
+                try db.collection("users").document("\(uid)").collection("cellarBeer").document("\(beer.beerName)").setData(from: beerToAdd)
             } catch let error {
                 print("Error writing beer to Firestore: \(error)")
             }

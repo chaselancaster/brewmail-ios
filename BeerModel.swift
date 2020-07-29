@@ -21,4 +21,17 @@ struct BeerModel: Codable {
     let breweryName: String
     let breweryLabel: String
     
+    enum CodingKeys: String, CodingKey {
+        case bid
+        case beerName
+        case beerLabel
+        case beerAbv
+        case beerIbu
+        case beerDescription
+        case beerStyle
+        case breweryId
+        case breweryName
+        case breweryLabel
+    }
+    
 }
