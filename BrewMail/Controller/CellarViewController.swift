@@ -41,25 +41,17 @@ class CellarViewController: UITableViewController {
         
         let docRef = db.collection("users").document("\(uid)").collection("cellarBeer")
 
-        docRef.getDocuments { (documents, error) in
+        docRef.getDocuments { (snapshot, error) in
            
-            let result = Result {
-              try documents?.data(as: BeerModel.self)
-            }
-            switch result {
-            case .success(let city):
-                if let city = city {
-                    // A `City` value was successfully initialized from the DocumentSnapshot.
-                    print("City: \(city)")
-                } else {
-                    // A nil value was successfully initialized from the DocumentSnapshot,
-                    // or the DocumentSnapshot was nil.
-                    print("Document does not exist")
+            if let error = error {
+                print("Error retreiving documents from cellarBeer:", error)
+            } else if let snapshot = snapshot {
+                let firestoreCellarBeer = snapshot.documents.compactMap() { (document) -> BeerModel? in
+                    return try? document.data(as: BeerModel.self)
                 }
-            case .failure(let error):
-                // A `City` value could not be initialized from the DocumentSnapshot.
-                print("Error decoding city: \(error)")
+                print("firestoreCellarBeer -->", firestoreCellarBeer)
             }
+            
         }
           
         
