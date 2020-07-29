@@ -18,7 +18,7 @@ class CellarViewController: UITableViewController {
     @IBOutlet var breweryName: UILabel!
     @IBOutlet var beerStyle: UILabel!
     
-    var cellarBeer = []
+    var cellarBeer = [BeerModel]()
     
     let db = Firestore.firestore()
     
@@ -28,7 +28,7 @@ class CellarViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         // Clearing array so it doesn't duplicate every time a user checks cellar
-        cellarBeer = []
+        cellarBeer = [BeerModel]()
         
         findUserCellarBeer()
         
