@@ -15,5 +15,8 @@ class CellarBeerShowViewController: UIViewController {
     
     let db = Firestore.firestore()
     
+    // Beer being passed in from CellarVC
+    var beerToShow: BeerModel?
+    
     
 }

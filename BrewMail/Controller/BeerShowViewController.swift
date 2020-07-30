@@ -15,6 +15,9 @@ class BeerShowViewController: UIViewController {
     
     let db = Firestore.firestore()
     
+    // Beer being passed in from SearchVC
+    var beerToShow: BeerModel?
+    
     @IBOutlet var beerImageView: UIImageView!
     @IBOutlet var beerName: UILabel!
     @IBOutlet var beerStyle: UILabel!
@@ -24,10 +27,7 @@ class BeerShowViewController: UIViewController {
     @IBOutlet var beerDescription: UITextView!
     @IBOutlet var beerAddedLabel: UILabel!
     
-    var beerToShow: BeerModel?
-    
     override func viewDidLoad() {
-        //        print(beerToShow, "<--beerToShow")
         
         if let beer = beerToShow {
             beerName.text = beer.beerName
