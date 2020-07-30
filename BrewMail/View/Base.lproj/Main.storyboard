@@ -404,6 +404,7 @@
                                     <outlet property="beerName" destination="53Q-Zz-2fc" id="LEA-zq-WMV"/>
                                     <outlet property="beerStyle" destination="m5L-uH-kcd" id="Z6g-co-jji"/>
                                     <outlet property="breweryName" destination="WNF-OQ-BGd" id="PXn-kr-vwA"/>
+                                    <segue destination="lBb-Ky-ngP" kind="show" identifier="showCellarBeerSegue" id="8DZ-Tu-0hL"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
