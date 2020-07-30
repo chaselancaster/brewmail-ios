@@ -45,6 +45,7 @@ class BeerShowViewController: UIViewController {
     }
     
     @IBAction func addToCellarButtonTapped(_ sender: Any) {
+        
         if let beer = beerToShow {
             // Finding current user's id
             guard let uid = Auth.auth().currentUser?.uid else { return }
@@ -61,31 +62,6 @@ class BeerShowViewController: UIViewController {
             } catch let error {
                 print("Error writing beer to Firestore: \(error)")
             }
-            
-            //            let beerData: [String: Any] = [
-            //                "bid": beer.bid,
-            //                "beerName": beer.beerName,
-            //                "beerLabel": beer.beerLabel,
-            //                "beerAbv": beer.beerAbv,
-            //                "beerIbu": beer.beerIbu,
-            //                "beerDescription": beer.beerDescription,
-            //                "beerStyle": beer.beerStyle,
-            //                "breweryId": beer.breweryId,
-            //                "breweryName": beer.breweryName,
-            //                "breweryLabel": beer.breweryLabel
-            //            ]
-            //            db.collection("users").document("\(uid)").collection("cellarBeer").document("\(beer.beerName)").setData(beerData) { err in
-            //                if let err = err {
-            //                    print("Error adding cellarBeer document: \(err)")
-            //                } else {
-            //                    print("Beer successfully added to cellarBeer")
-            //                    self.beerAddedLabel.isHidden = false
-            //                    UIView.animate(withDuration: 5) {
-            //                        self.beerAddedLabel.alpha = 0
-            //                    }
-            //                }
-            //            }
-            
         }
         
     }
