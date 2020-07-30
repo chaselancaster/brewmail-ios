@@ -15,6 +15,7 @@
 		74583116248065230003D030 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74583114248065230003D030 /* Main.storyboard */; };
 		74583118248065240003D030 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74583117248065240003D030 /* Assets.xcassets */; };
 		7458311B248065240003D030 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74583119248065240003D030 /* LaunchScreen.storyboard */; };
+		745AEF5B24D33B18003AAEE9 /* CellarBeerShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745AEF5A24D33B18003AAEE9 /* CellarBeerShowViewController.swift */; };
 		7460766B248868F600407E18 /* BeerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7460766A248868F600407E18 /* BeerModel.swift */; };
 		749F105B248091A10028ED59 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749F105A248091A10028ED59 /* RegisterViewController.swift */; };
 		74DB22F1248F0A050074B98C /* BeerShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DB22F0248F0A050074B98C /* BeerShowViewController.swift */; };
@@ -39,6 +40,7 @@
 		74583117248065240003D030 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7458311A248065240003D030 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7458311C248065240003D030 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		745AEF5A24D33B18003AAEE9 /* CellarBeerShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellarBeerShowViewController.swift; sourceTree = "<group>"; };
 		7460766A248868F600407E18 /* BeerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerModel.swift; sourceTree = "<group>"; };
 		749F105A248091A10028ED59 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		74DB22F0248F0A050074B98C /* BeerShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerShowViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				749F105A248091A10028ED59 /* RegisterViewController.swift */,
 				74DB22F0248F0A050074B98C /* BeerShowViewController.swift */,
 				743F3EE6249D64AC00D31444 /* CellarViewController.swift */,
+				745AEF5A24D33B18003AAEE9 /* CellarBeerShowViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				749F105B248091A10028ED59 /* RegisterViewController.swift in Sources */,
 				74F9B7342485A388000A7239 /* Constants.swift in Sources */,
 				743F3EE7249D64AC00D31444 /* CellarViewController.swift in Sources */,
+				745AEF5B24D33B18003AAEE9 /* CellarBeerShowViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
