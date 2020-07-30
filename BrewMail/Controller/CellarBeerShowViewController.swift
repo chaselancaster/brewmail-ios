@@ -6,4 +6,7 @@
 //  Copyright © 2020 Chase Lancaster. All rights reserved.
 //
 
-import Foundation
+import Firebase
+import FirebaseFirestoreSwift
+import SDWebImage
+import UIKit
