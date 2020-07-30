@@ -10,3 +10,10 @@ import Firebase
 import FirebaseFirestoreSwift
 import SDWebImage
 import UIKit
+
+class CellarBeerShowViewController: UIViewController {
+    
+    let db = Firestore.firestore()
+    
+    
+}
