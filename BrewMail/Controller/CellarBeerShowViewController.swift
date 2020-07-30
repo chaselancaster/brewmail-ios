@@ -26,5 +26,19 @@ class CellarBeerShowViewController: UIViewController {
     @IBOutlet var breweryName: UILabel!
     @IBOutlet var beerDescription: UITextView!
     
+    override func viewDidLoad() {
+        
+        if let beer = beerToShow {
+            beerName.text = beer.beerName
+            beerStyle.text = beer.beerStyle
+            beerABV.text = "ABV: \(String(beer.beerAbv))"
+            beerIBU.text = "IBU: \(String(beer.beerIbu))"
+            breweryName.text = beer.breweryName
+            beerDescription.text = beer.beerDescription
+            beerImageView.sd_setImage(with: URL(string: beer.beerLabel), placeholderImage: UIImage(named: "placeholder.png"))
+        }
+     
+    }
+    
     
 }
