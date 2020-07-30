@@ -476,13 +476,6 @@
                                 <rect key="frame" x="67" y="109" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Beer added to cellar!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5X-Xs-IeA">
-                                <rect key="frame" x="108" y="749" width="159" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jmw-MC-P7z">
                                 <rect key="frame" x="120" y="686" width="135" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -498,7 +491,6 @@
                     <navigationItem key="navigationItem" id="8of-Jm-bK0"/>
                     <connections>
                         <outlet property="beerABV" destination="hJ5-ce-QPh" id="Y9i-JJ-e0F"/>
-                        <outlet property="beerAddedLabel" destination="g5X-Xs-IeA" id="dz1-mg-Cxh"/>
                         <outlet property="beerDescription" destination="95M-oQ-dzN" id="vxO-v9-N65"/>
                         <outlet property="beerIBU" destination="Nwg-xy-842" id="LRd-jm-LAQ"/>
                         <outlet property="beerImageView" destination="1fc-HZ-GxS" id="qTB-Sd-m12"/>
