@@ -92,12 +92,12 @@ extension CellarViewController {
         return cell
     }
     
-    //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    //        let destinationVC = segue.destination as! BeerShowViewController
-    //
-    //        if let indexPath = tableView.indexPathForSelectedRow {
-    //            destinationVC.beerToShow = cellarBeer[indexPath.row]
-    //        }
-    //    }
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            let destinationVC = segue.destination as! CellarBeerShowViewController
+    
+            if let indexPath = tableView.indexPathForSelectedRow {
+                destinationVC.beerToShow = cellarBeer[indexPath.row]
+            }
+        }
     
 }
