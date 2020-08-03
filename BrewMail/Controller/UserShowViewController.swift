@@ -10,3 +10,9 @@ import Firebase
 import FirebaseFirestoreSwift
 import Foundation
 import UIKit
+
+class UserShowViewController: UIViewController {
+    
+    
+    
+}
