@@ -350,11 +350,37 @@
                     <connections>
                         <segue destination="gr1-jp-pvW" kind="relationship" relationship="viewControllers" id="RzK-VD-heG"/>
                         <segue destination="Wpu-3Y-lv1" kind="relationship" relationship="viewControllers" id="0Uz-Nc-vWp"/>
+                        <segue destination="yt0-oN-tdb" kind="relationship" relationship="viewControllers" id="1Ym-iR-tLQ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iEQ-Xb-4al" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2685.5999999999999" y="136.69950738916256"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="oQj-r7-fXH">
+            <objects>
+                <viewController id="yt0-oN-tdb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G67-xf-80g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="USER SHOW VC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdQ-in-hqo">
+                                <rect key="frame" x="124" y="123" width="126" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="wr5-V5-4jC"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="fRX-dT-1Te"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qcY-0G-mGE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2679" y="951"/>
         </scene>
         <!--BrewMail-->
         <scene sceneID="2CU-my-mg3">
@@ -510,5 +536,6 @@
     <resources>
         <image name="folder" catalog="system" width="128" height="95"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="person" catalog="system" width="128" height="117"/>
     </resources>
 </document>
