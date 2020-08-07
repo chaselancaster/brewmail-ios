@@ -13,6 +13,18 @@ import UIKit
 
 class UserShowViewController: UIViewController {
     
+    override func viewDidLoad() {
+        
+        title = "User"
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logoutTapped))
+        
+    }
     
+    @objc func logoutTapped() {
+        
+        print("Logout tapped hit")
+        
+    }
     
 }
