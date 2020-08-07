@@ -376,7 +376,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="wr5-V5-4jC"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="mbg-U8-5XW"/>
+                    <navigationItem key="navigationItem" title="Title" id="mbg-U8-5XW">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="PZ6-26-gxv">
+                            <connections>
+                                <action selector="logoutButtonTapped:" destination="yt0-oN-tdb" id="bKX-SZ-RLf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qcY-0G-mGE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

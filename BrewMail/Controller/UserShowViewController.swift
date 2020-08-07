@@ -13,17 +13,24 @@ import UIKit
 
 class UserShowViewController: UIViewController {
     
+    @IBAction func logoutButtonTapped(_ sender: Any) {
+    }
+    
     override func viewDidLoad() {
         
-        title = "User"
-        
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logoutTapped))
         
     }
     
     @objc func logoutTapped() {
         
-        print("Logout tapped hit")
+        let firebaseAuth = Auth.auth()
+        
+        do {
+            try firebaseAuth.signOut()
+            print("User logged out")
+        } catch let signOutError as NSError {
+            print("Error signing out: %@", signOutError)
+        }
         
     }
     
