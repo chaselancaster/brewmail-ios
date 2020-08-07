@@ -12,4 +12,5 @@ struct Constants {
     static let showBeerSegue = "showBeerSegue"
     static let showCellarBeerSegue = "showCellarBeerSegue"
     static let beerCell = "beerCell"
+    static let homeStoryboardID = "homeVC"
 }

@@ -31,6 +31,9 @@ class UserShowViewController: UIViewController {
             print("Error signing out: %@", signOutError)
         }
         
+        guard let homeVC = storyboard?.instantiateViewController(withIdentifier: Constants.homeStoryboardID) as? ViewController else { return }
+        self.navigationController?.pushViewController(homeVC, animated: true)
+        
     }
     
 }
