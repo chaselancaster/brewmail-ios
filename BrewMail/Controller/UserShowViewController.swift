@@ -13,15 +13,14 @@ import UIKit
 
 class UserShowViewController: UIViewController {
     
-    @IBAction func logoutButtonTapped(_ sender: Any) {
-    }
-    
     override func viewDidLoad() {
         
         
+        
     }
     
-    @objc func logoutTapped() {
+    
+    @IBAction func logoutButtonTapped(_ sender: Any) {
         
         let firebaseAuth = Auth.auth()
         
