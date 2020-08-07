@@ -380,7 +380,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Logout" id="PZ6-26-gxv">
                             <connections>
                                 <action selector="logoutButtonTapped:" destination="yt0-oN-tdb" id="bKX-SZ-RLf"/>
-                                <segue destination="BYZ-38-t0r" kind="show" id="bod-o7-5Ar"/>
+                                <segue destination="BYZ-38-t0r" kind="showDetail" id="bod-o7-5Ar"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -557,6 +557,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="RXF-4C-ka4"/>
         <segue reference="YQc-LQ-VuB"/>
         <segue reference="bod-o7-5Ar"/>
     </inferredMetricsTieBreakers>
